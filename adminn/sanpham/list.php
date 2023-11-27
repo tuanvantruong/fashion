@@ -8,9 +8,12 @@
                         <th></th>
                         <th>Mã Sản Phẩm</th>
                         <th>Tên Sản Phẩm</th>
+                        <th>Ngày Nhập</th>
+                        <th>Mô Tả</th>
+                        <th>Số Lượt Xem</th>
                         <th>Hình Ảnh</th>
                         <th>Giá </th>
-                        <th>Lượt Xem</th>
+                        <th>Mã Loại</th>
                         <th></th>
                     </tr>
                     <?php
@@ -20,13 +23,18 @@
                             $xoasp="index.php?act=xoadm&id=".$id;
                             echo '<tr>
                             <td>
+                         
                                 <input type="checkbox" name="" id="">
                             </td>
                             <td>'.$id.'</td>
-                            <td>'.$name.'</td>
-                            <td>'.$img.'</td>
-                            <td>'.$price.'</td>
-                            <td>'.$luotxem.'</td>
+                            <td>'.$ten_hh.'</td>
+                            <td>'.$ngay_nhap.'</td>
+                            <td>'.$mo_ta.'</td>
+                            <td>'.$so_luot_xem.'</td>
+                            <td>'.$hinh.'</td>
+                            <td>'.$gia.'</td>
+                            <td>'.$ma_loai.'</td>
+                            
                             <td>
                             <a href="'.$suasp.'">    <input type="button" value="Sửa"></a>
                             <a href="'.$xoasp.'">    <input type="button" value="Xoá"></a>

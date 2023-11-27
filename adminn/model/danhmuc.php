@@ -8,7 +8,7 @@
         pdo_execute($sql);
     }
     function loadall_danhmuc(){
-        $sql="select * from loai order by id desc";
+        $sql="select * from loai order by ma_loai desc";
         $listdanhmuc=pdo_query($sql);
         return $listdanhmuc;
     }

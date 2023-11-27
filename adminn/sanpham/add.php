@@ -4,17 +4,8 @@
             </div>
             <div class="form_content">
                 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
-                    Danh Mục <br>
-                    <select name="ma_loai" id="">
-                        <?php
-                        foreach ($listdanhmuc as $danhmuc) {
-                            extract($danhmuc);
-                            echo '<option value='".$id."'>'.$ten_loai.'
-                            </option>';
-                        }
-                        ?>
-                        
-                    </select>
+                   
+                    
                     <p class="ma">Mã Sản Phẩm</p>
                     <input type="text" name="ma_hh" placeholder="Auto Number">
                     <p class="ma">Tên Sản Phẩm  </p>
@@ -27,9 +18,20 @@
                     <input type="file" name="hinh">
                     <p class="ma">Số Lượt Xem</p>
                     <input type="text" name="so_luot_xem">
-                    <p class="ma">Mô tả </p>
-                    <input type="text"name="so_luot_xem">
-                    <textarea name="mo_ta"  cols="30" rows="10"></textarea>
+                    <br>
+                    <p class="ma">Mô tả </p> <br><br><br><br>       
+                    <textarea name="mo_ta"  cols="30" rows="10"></textarea> <br><br>
+                    Danh Mục 
+                    <select name="ma_loai" id="">
+                        <?php
+                        foreach ($listdanhmuc as $danhmuc) {
+                            extract($danhmuc);
+                            echo '<option  value="'.$id.'">'.$ten_loai.'
+                            </option>';
+                        }
+                        ?>
+                       <br> 
+                    </select>
                     <div class="submit">
                         <input type="submit" name = "themmoi" value="Thêm mới" name="">
                         <input type="reset" value="Nhập lại" name="">

@@ -1,6 +1,6 @@
 <?php
     function insert_sanpham($ten_hh,$ngay_nhap,$mo_ta,$so_luot_xem,$hinh,$gia,$ma_loai){
-        $sql = "insert into hang_hoa(ten_hh,ngay_nhap,mo_ta,so_luot_xem,hinh,gia,ma_loai) values('$ten_hh,$ngay_nhap,$mo_ta,$so_luot_xem,$hinh,$gia,$ma_loai')";
+        $sql = "insert into hang_hoa(ten_hh,ngay_nhap,mo_ta,so_luot_xem,hinh,gia,ma_loai) values('$ten_hh','$ngay_nhap','$mo_ta','$so_luot_xem','$hinh','$gia','$ma_loai')";
         pdo_execute($sql);
     }
     function delete_sanpham($id){
@@ -18,7 +18,7 @@
         return $danhmuc;
     }
     function update_sanpham($id,$tenloai){
-        $sql = "update hang_hoa set name='".$tenloai."' where ma_hh=".$id;
+        $sql = "update hang_hoa set ten_hh='".$tenloai."' where ma_hh=".$id;
         pdo_execute($sql);
     }
 ?>
