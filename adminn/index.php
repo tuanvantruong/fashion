@@ -12,40 +12,59 @@
                 // Kiểm tra xem người có click vào nut add hay không 
                 if(isset($_POST['themmoi']) && $_POST['themmoi']){
                     $tenloai = $_POST['tenloai'];
-                  insert_danhmuc($tenloai);
+                    $sql="INSERT into loai(ten_loai) values ('$tenloai')";
+                    pdo_execute($sql);      
+                //   insert_danhmuc($tenloai);
                     $thongbao = "Thêm thành công";
                 }
                
                 include "danhmuc/add.php";
                 break;
+
+
             case 'listdm':
-                $listdanhmuc=loadall_danhmuc();
+                $sql="select * from loai order by ten_loai";
+                $listdanhmuc=pdo_query($sql);
                 include "danhmuc/list.php";
                 break;
+
             case 'xoadm':
-                if(isset($_GET['id'])&&($_GET['id']>0)){
-                    delete_danhmuc($_GET['id']);
+                if(isset($_GET['ma_loai'])&&($_GET['ma_loai']>0)){
+                    $sql="DELETE FROM loai WHERE ma_loai =".$_GET['ma_loai'];
+                    pdo_execute($sql);
                 }
-                $listdanhmuc=loadall_danhmuc();
+                
+                $sql="select * from loai order by ten_loai";
+                $listdanhmuc=pdo_query($sql);
                 include "danhmuc/list.php";
                 break;
+
+
                 case 'suadm':
-                if(isset($_GET['id'])&&($_GET['id']>0)){ 
-                    $danhmuc=loadone_danhmuc($_GET['id']);   
-                    }    
+                if(isset($_GET['ma_loai'])&&($_GET['ma_loai']>0)){ 
+                    $sql="SELECT * from loai where ma_loai=".$_GET['ma_loai'];
+                    $danhmuc=pdo_query_one($sql);
+                }    
                     include "danhmuc/update.php";
                     break;
+
+
                 case 'updatedm':
-                if(isset($_POST['capnhat']) && $_POST['capnhat']){
-                    $tenloai = $_POST['tenloai'];
-                    $id = $_POST['id'];
-                    update_danhmuc($id,$tenloai);
-                    $thongbao= "Cập nhật thành công";
-                }    
-                $listdanhmuc=loadall_danhmuc();
+                    if(isset($_POST['capnhat']) && $_POST['capnhat']){
+                        $tenloai = $_POST['tenloai'];
+                        $maloai = $_POST['maloai']; 
+                        $sql="UPDATE loai set ten_loai ='".$tenloai."' WHERE ma_loai=".$maloai;
+                        pdo_execute($sql);      
+                        $thongbao = "Cập nhật thành công";
+                    }
+
+                $sql="select * from loai order by ten_loai";
+                $listdanhmuc=pdo_query($sql);
                 include "danhmuc/list.php";
                 break;
                 /*controler cho sản phẩm */
+
+
 
                 case 'addsp':
                     // Kiểm tra xem người có click vào nut add hay không 

@@ -12,19 +12,20 @@
                     </tr>
                     <?php
                         foreach ($listdanhmuc as $danhmuc) {
-                            extract($danhmuc);
-                            $suadm="index.php?act=suadm&id=".$id;
-                            $xoadm="index.php?act=xoadm&id=".$id;
+                            extract($danhmuc);  
+                            $xoadm="index.php?act=xoadm&ma_loai=".$ma_loai;
+                            $suadm="index.php?act=suadm&ma_loai=".$ma_loai;
+                            
                             echo '<tr>
                             <td>
                                 <input type="checkbox" name="" id="">
                             </td>
-                            <td>'.$id.'</td>
-                            <td>'.$name.'</td>
+                            <td>'.$ma_loai.'</td>
+                            <td>'.$ten_loai.'</td>
                             <td>
-                            <a href="'.$suadm.'">    <input type="button" value="Sửa"></a>
-                            <a href="'.$xoadm.'">    <input type="button" value="Xoá"></a>
-    
+                            <a href="'.$xoadm.'"><input type="button" value="Xoá"></a>
+                            <a href="'.$suadm.'"><input type="button" value="Sửa"></a>
+
                             </td>
                         </tr>';
 
