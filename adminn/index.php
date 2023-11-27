@@ -69,11 +69,24 @@
                 case 'addsp':
                     // Kiểm tra xem người có click vào nut add hay không 
                     if(isset($_POST['themmoi']) && $_POST['themmoi']){
-                        $tenloai = $_POST['tenloai'];
-                      insert_sanpham($tenloai);
+
+                        $ma_loai = $_POST['ma_loai'];
+                        $ten_hh = $_POST['ten_hh'];
+                        $ngay_nhap = $_POST['ngay_nhap'];
+                        $mo_ta = $_POST['mo_ta'];
+                        $dac_biet = $_POST['dac_biet'];
+                        $so_luot_xem = $_POST['so_luot_xem'];
+                        $hinh=$_FILES['hinh']['name'];
+                        $target_dir="../upload/";
+                        $target_dir=$target_dir.basename($_FILES["hinh"]["name"]);
+                        if(move_uploaded_file($_FILES["hinh"]["tmp_name"],$target_file)){
+                        }else{}
+                        $gia=$_POST['gia'];
+                        $ma_loai = $_POST['ma_loai'];
+                      insert_sanpham($ten_hh,$ngay_nhap,$mo_ta,$so_luot_xem,$hinh,$gia,$ma_loai);
                         $thongbao = "Thêm thành công";
                     }
-                   
+                   $listdanhmuc=loadall_danhmuc();
                     include "sanpham/add.php";
                     break;
                 case 'listsp':

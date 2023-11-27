@@ -4,16 +4,32 @@
             </div>
             <div class="form_content">
                 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
+                    Danh Mục <br>
+                    <select name="ma_loai" id="">
+                        <?php
+                        foreach ($listdanhmuc as $danhmuc) {
+                            extract($danhmuc);
+                            echo '<option value='".$id."'>'.$ten_loai.'
+                            </option>';
+                        }
+                        ?>
+                        
+                    </select>
                     <p class="ma">Mã Sản Phẩm</p>
-                    <input type="text" name="masp" placeholder="Auto Number">
+                    <input type="text" name="ma_hh" placeholder="Auto Number">
                     <p class="ma">Tên Sản Phẩm  </p>
-                    <input type="text" name="tensp">
+                    <input type="text" name="ten_hh">
+                    <p class="ma">Ngày Nhập</p>
+                    <input type="date" name="ngay_nhap">
                     <p class="ma">Giá  </p>
-                    <input type="text" name="giasp">
+                    <input type="text" name="gia">
                     <p class="ma">Hình ảnh </p>
-                    <input type="file" name="hinhanh">
+                    <input type="file" name="hinh">
+                    <p class="ma">Số Lượt Xem</p>
+                    <input type="text" name="so_luot_xem">
                     <p class="ma">Mô tả </p>
-                    <textarea name="mota"  cols="30" rows="10"></textarea>
+                    <input type="text"name="so_luot_xem">
+                    <textarea name="mo_ta"  cols="30" rows="10"></textarea>
                     <div class="submit">
                         <input type="submit" name = "themmoi" value="Thêm mới" name="">
                         <input type="reset" value="Nhập lại" name="">
