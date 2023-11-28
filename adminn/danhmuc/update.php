@@ -10,12 +10,12 @@
             <div class="form_content">
                 <form action="index.php?act=updatedm" method="POST">
                     <p class="ma">Mã loại</p>
-                    <input type="text" name="maloai" disabled >
+                    <input type="text" name="ma_loai" disabled >
 
                     <p class="ma">Tên loại</p>
-                    <input type="text" name="tenloai" value="<?php if(isset($ten_loai) && ($ten_loai != "")) echo $ten_loai;?>">
+                    <input type="text" name="ten_loai" value="<?php if(isset($ten_loai) && ($ten_loai != "")) echo $ten_loai;?>">
                     <div class="submit">
-                        <input type="hidden" name="maloai" value="<?php if(isset($ma_loai) && ($ma_loai>0)) echo$ma_loai;?>">
+                        <input type="hidden" name="ma_loai" value="<?php if(isset($ma_loai) && ($ma_loai>0)) echo$ma_loai;?>">
                         <input type="submit" name = "capnhat" value="Cập nhật" name="">
                         <input type="reset" value="Nhập lại" name="">
                         <a href="index.php?act=listdm">

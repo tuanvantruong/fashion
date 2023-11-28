@@ -33,7 +33,7 @@
                        <br> 
                     </select>
                     <div class="submit">
-                        <input type="submit" name = "themmoi" value="Thêm mới" name="">
+                        <input type="submit" name = "themmoi" value="Thêm mới" >
                         <input type="reset" value="Nhập lại" name="">
                         <a href="index.php?act=listsp">
                             <input type="button" value="Danh sách" name="">

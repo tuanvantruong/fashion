@@ -18,7 +18,7 @@
         return $danhmuc;
     }
     function update_danhmuc($id,$tenloai){
-        $sql = "update loai set name='".$tenloai."' where ma_loai=".$id;
+        $sql = "update loai set ten_loai='".$tenloai."' where ma_loai=".$id;
         pdo_execute($sql);
     }
 ?>

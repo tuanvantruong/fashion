@@ -17,8 +17,8 @@
         $danhmuc=pdo_query_one($sql);
         return $danhmuc;
     }
-    function update_sanpham($id,$tenloai){
-        $sql = "update hang_hoa set ten_hh='".$tenloai."' where ma_hh=".$id;
+    function update_sanpham($id,$ten_hh){
+        $sql = "update hang_hoa set ten_hh='".$ten_hh."' where ma_hh=".$id;
         pdo_execute($sql);
     }
 ?>
