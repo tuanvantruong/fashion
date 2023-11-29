@@ -16,7 +16,7 @@
                     <p class="ma">Giá  </p>
                     <input type="text" name="giasp">
                     <p class="ma">Hình ảnh </p>
-                    <input type="file" name="hinhanh">
+                    <input type="file" name="hinh">
                     <p class="ma">Mô tả </p> <p></p>
                     <textarea name="mota"  cols="30" rows="10"></textarea>
                     <div class="submit">
