@@ -48,7 +48,7 @@ if(is_file($hinhpath)){
            </div>
            <div class="row2 mb10">
             <label>Mô tả: </label> <br>
-           <textarea name="mota" id="" cols="30" rows="10" value="<?=$mota?>"></textarea>
+           <textarea name="mota" id="" cols="30" rows="10"> <?=$mota?></textarea>
            </div>
            <div class="row mb10 ">
             <input type="hidden" name="id" value="<?=$id?>">
