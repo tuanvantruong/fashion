@@ -1,82 +1,152 @@
-    <!-- FOOTER -->
-    <footer class="box_footer row mb demo">
- <!-- footer section starts -->
- <div id="footer">
-            <div class="footer-left">
-              <div class="footer-logo">
-                <img src="./img/FPTShop_logo.jpg" alt="" />
-              </div>
-              <div class="card_1">
-                <h3>CÔNG TY ĐIỆN TỬ FPT SỐ 1 VIỆT NAM</h3>
-                <div>
-                  <i class="fa-sharp fa-solid fa-location-pin"></i>
-                  <p>
-                    Tầng 2 tòa nhà T10, Times City Vĩnh Tuy, Hai Bà Trưng, Hà Nội.
-                  </p>
-                </div>
-      
-                <div>
-                  <i class="fa-solid fa-phone-flip"></i>
-                  <p>1900.63.69.36</p>
-                </div>
-      
-                <div>
-                  <i class="fa-solid fa-envelope"></i>
-                  <p>info@tocotocotea.com</p>
-                </div>
-      
-                <p>Số ĐKKD: 0106341306. Ngày cấp: 16/03/2017.</p>
-                <p>Nơi cấp: Sở kế hoạch và Đầu tư Thành phố Hà Nội.</p>
-                <div class="icons">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-square-instagram"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-square-twitter"></i>
-                  <i class="fa-brands fa-google-plus"></i>
-                </div>
-      
-                <div class="images">
-                  <div class="image">
-                    <img
-                      src="./img/anh4.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="image">
-                    <img src="./img/anh1.jpg" alt="" />
-                  </div>
-              
-      
-                <div class="image_3 image">
-                  <img src="./img/anh2.jpg" alt="" />
-                </div>
-                </div>
-              </div>
+<!-- FOOTER START -->
+<div class="footer dark-bg">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="f-logo left-side"> <a href="index.html"> <img src="images/footer-logo.png" alt="Honour"> </a> </div>
+              <p>Passage of Lorem Ipsum, you need toe sure there isn't anything embarrassing hidden in the middle of text.  All the Lorem Ipsum </p>
             </div>
-            <div class="footer-right">
-              <div class="card_2">
-                <h3>VỀ CHÚNG TÔI</h3>
-                <a href="#">Giới thiệu về TocoToco</a>
-                <a href="gioithieu.html">Nhượng quyền</a>
-                <a href="">Tin tức khuyến mại</a>
-                <a href="">Cửa hàng</a>
-                <a href="#">Quy định chung</a>
-                <a href="#">TT liên hệ &#038; ĐKKD</a>
-              </div>
-              <div class="card_3">
-                <h3>CHÍNH SÁCH</h3>
-                <a href="#">Chính sách thành viên</a>
-                <a href="#">Hình thức thanh toán</a>
-                <a href="#">Vận chuyển giao nhận</a>
-                <a href="#">Đổi trả và hoàn tiền</a>
-                <a href="#">Bảo vệ thông tin cá nhân</a>
-                <a href="#">Bảo trì, bảo hành</a>
+            <div class="col-md-4">
+              <div class="footer_social right-side float-none-sm pt-sm-15 center-sm mt-sm-15">
+                <ul class="social-icon">
+                  <li><a title="Facebook" class="facebook"><i class="fa fa-facebook"> </i></a></li>
+                  <li><a title="Twitter" class="twitter"><i class="fa fa-twitter"> </i></a></li>
+                  <li><a title="Linkedin" class="linkedin"><i class="fa fa-linkedin"> </i></a></li>
+                  <li><a title="RSS" class="rss"><i class="fa fa-rss"> </i></a></li>
+                  <li><a title="Pinterest" class="pinterest"><i class="fa fa-pinterest"> </i></a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- footer section ends -->
-</footer>
-
+        </div>
+        <div class="footer-middle">
+          <div class="row">
+            <div class="col-md-3 f-col">
+              <div class="footer-static-block"> <span class="opener plus"></span>
+                <h3 class="title">Address</h3>
+                <ul class="footer-block-contant address-footer">
+                  <li class="item"> <i class="fa fa-map-marker"> </i>
+                    <p>150-A Appolo aprtment, opp. Hopewell Junction, Allen st Road, new york-405001.</p>
+                    <hr>
+                  </li>
+                  <li class="item"> <i class="fa fa-envelope-o"> </i>
+                    <p> <a>infoservices@honour.com </a> </p>
+                    <hr>
+                  </li>
+                  <li class="item"> <i class="fa fa-phone"> </i>
+                    <p>(+91) 9834567890</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 f-col">
+              <div class="footer-static-block"> <span class="opener plus"></span>
+                <h3 class="title">Tag</h3>
+                <ul class="footer-block-contant tagcloud">
+                  <li><a>Orange</a></li>
+                  <li><a>Neutral</a></li>
+                  <li><a>Print</a></li>
+                  <li><a>Tan</a></li>
+                  <li><a>Purple</a></li>
+                  <li><a>Yellow</a></li>
+                  <li><a>White</a></li>
+                  <li><a>Metallic</a></li>
+                  <li><a>Red</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 f-col">
+              <div class="footer-static-block"> <span class="opener plus"></span>
+                <h3 class="title">Services</h3>
+                <ul class="footer-block-contant link">
+                  <li><a><span>■</span> About Us</a></li>
+                  <li><a><span>■</span> Jobs</a></li>
+                  <li><a><span>■</span> Affiliates</a></li>
+                  <li><a><span>■</span> Contact</a></li>
+                  <li><a><span>■</span> About Us</a></li>
+                  <li><a><span>■</span> Jobs</a></li>
+                  <li><a><span>■</span> Affiliates</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 f-col">
+              <div class="footer-static-block"> <span class="opener plus"></span>
+                <h3 class="title">Contact Us</h3>
+                <div class="footer-block-contant">
+                  <form>
+                    <div class="field">
+                      <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="field">
+                      <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                      <textarea name="Message" placeholder="Message" required id="message" cols="5" rows="2"></textarea>
+                    </div>
+                    <div class="field">
+                      <button title="Subscribe" class="btn-color">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom align-center">
+          <div class="site-link">
+            <ul>
+              <li><a>Cycling</a>|</li>
+              <li><a>Running</a>|</li>
+              <li><a>Swimming</a>|</li>
+              <li><a>Football</a>|</li>
+              <li><a>Golf</a>|</li>
+              <li><a>Tools</a>|</li>
+              <li><a>Bedding</a>|</li>
+              <li><a>Food</a>|</li>
+              <li><a>Furniture</a>|</li>
+              <li><a>Kitchen</a>|</li>
+              <li><a>Lighting</a></li>
+            </ul>
+          </div>
+          <div class="copy-right">© 2017  All Rights Reserved. Design By <a href="#">WebcoTheme</a></div>
+          <div class="payment">
+            <ul class="payment_icon">
+              <li class="discover"><a></a></li>
+              <li class="visa"><a></a></li>
+              <li class="mastro"><a></a></li>
+              <li class="paypal"><a></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-top">
+    <div id="scrollup"></div>
+  </div>
+  <!-- FOOTER END --> 
 </div>
+<script src="js/jquery-1.12.3.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script> 
+<script src="js/fotorama.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>  
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/custom.js"></script>
+
+<script>
+  /* ------------ Newslater-popup JS Start ------------- */
+  $(window).load(function() {
+    $.magnificPopup.open({
+      items: {src: '#newslater-popup'},type: 'inline'}, 0);
+  });
+    /* ------------ Newslater-popup JS End ------------- */
+</script>
+
 </body>
+
+<!-- Mirrored from webcotheme.com/honour/demo2/hon001/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Nov 2023 08:26:49 GMT -->
 </html>

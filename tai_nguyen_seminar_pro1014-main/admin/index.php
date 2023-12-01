@@ -13,6 +13,56 @@ if(isset($_GET['act'])){
     $act=$_GET['act'];
     switch($act){
 
+
+
+
+        case 'adddm':
+            // Kiểm tra xem người có click vào nut add hay không 
+            if(isset($_POST['themmoi']) && $_POST['themmoi']){
+                $tenloai = $_POST['tenloai'];
+                $sql="insert into danhmuc(name) values('$tenloai')";
+                pdo_execute($sql);
+                $thongbao = "Thêm thành công";
+            }
+           
+            include "danhmuc/add.php";
+            break;
+        case 'listdm':
+            $sql="select * from danhmuc order by id desc";
+            $listdanhmuc=pdo_query($sql);
+            include "danhmuc/list.php";
+            break;
+        case 'xoadm':
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                $sql="delete from danhmuc where id=".$_GET['id'];
+                pdo_execute($sql);
+                
+            }
+            $sql="select * from danhmuc order by id desc";
+            $listdanhmuc=pdo_query($sql);
+            include "danhmuc/list.php";
+            break;
+
+        case 'suadm':
+            if(isset($_GET['id'])&&($_GET['id']>0)){ 
+                $sql="select * from danhmuc where id=".$_GET['id'];
+                $dm=pdo_query_one($sql);
+                }    
+                include "danhmuc/update.php";
+                break;
+        case 'updatedm':
+            if(isset($_POST['capnhat']) && $_POST['capnhat']){
+                $tenloai = $_POST['tenloai'];
+                $id = $_POST['id'];
+                $sql="update danhmuc set name='".$tenloai."' where id=".$id;
+                pdo_execute($sql);
+                $thongbao= "Cập nhật thành công";
+            }    
+            $sql="select * from danhmuc order by id desc";
+            $listdanhmuc=pdo_query($sql);
+            include "danhmuc/list.php";
+            break;
+
  // CONTROLLER CHO PHẦN SẢN PHẨM
 
                 case 'addsp':
@@ -28,9 +78,9 @@ if(isset($_GET['act'])){
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                     if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                    echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
                       } else {
-                    echo "Sorry, there was an error uploading your file.";
+                    // echo "Sorry, there was an error uploading your file.";
                       }
 
                        insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
@@ -46,7 +96,7 @@ if(isset($_GET['act'])){
                         $keyw=$_POST['keyw'];
                         $iddm=$_POST['iddm'];
                     }else{
-                        $keyw="";
+                        $keyw='';
                         $iddm=0;
                     }
                     $listdanhmuc=loadall_danhmuc();

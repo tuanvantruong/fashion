@@ -5,10 +5,12 @@ include "model/sanpham.php";
 include "model/taikhoan.php";
 include "model/danhmuc.php";
 include "model/order.php";
+///ảnh lên home
 include "global.php";
 $sanpham = loadall_sanpham_home();
 $dsdm = loadall_danhmuc();
 $dstop10 = loadall_sanpham_top10();
+$dstop02= loadall_sanpham_top02();
 include "view/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];

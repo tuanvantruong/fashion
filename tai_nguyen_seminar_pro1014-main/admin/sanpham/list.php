@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website bán hàng</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css1/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
      
@@ -52,42 +52,22 @@
                    $xoasp="index.php?act=xoasp&id=".$id;
                    $hinhpath="../upload/".$img;
                    if(is_file($hinhpath)){
-                       $hinhpath="<img src='".$hinhpath."' width='100px' height='100px'>";
+                       $hinh="<img src='".$hinhpath."' width='100px' height='100px'>";
                    }else{
-                       $hinhpath="No file img!";
+                       $hinh="No file img!";
                    }
                    echo ' <tr>
              <td><input type="checkbox" name="" id=""></td>
              <td>'.$id.'</td>
              <td>'.$name.'</td>
              <td>'.$price.'</td>
-             <td>'.$hinhpath.'</td>
+             <td>'.$hinh.'</td>
              <td>'.$luotxem.'</td>
              <td><a href="'.$suasp.'"><input type="button" value="Sửa"> </a>  <a href="'.$xoasp.'"><input type="button" value="Xóa"></a> </td>
-         </tr>';
-               }
-               ?><?php
-               foreach($listsanpham as $sanpham){
-                   extract($sanpham);
-                   $suasp="index.php?act=suasp&id=".$id;
-                   $xoasp="index.php?act=xoasp&id=".$id;
-                   $hinhpath="../upload/".$img;
-                   if(is_file($hinhpath)){
-                       $hinhpath="<img src='".$hinhpath."' width='100px' height='100px'>";
-                   }else{
-                       $hinhpath="No file img!";
-                   }
-                   echo ' <tr>
-             <td><input type="checkbox" name="" id=""></td>
-             <td>'.$id.'</td>
-             <td>'.$name.'</td>
-             <td>'.$price.'</td>
-             <td>'.$hinhpath.'</td>
-             <td>'.$luotxem.'</td>
-             <td><a href="'.$suasp.'"><input type="button" value="Sửa"> </a>  <a href="'.$xoasp.'"><input type="button" value="Xóa"></a> </td>
-         </tr>';
+               </tr>';
                }
                ?>
+               
            </table>
            </div>
            <div class="row mb10 ">

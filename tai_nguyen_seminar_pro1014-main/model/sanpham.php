@@ -1,6 +1,7 @@
 <?php
 function insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm){
-    $sql="INSERT INTO `sanpham` ( `name`, `price`, `img`, `mota`, `iddm`) VALUES ( '$tensp', '$giasp','$hinh', '$mota', '$iddm'); ";
+    $sql="insert into sanpham(name,price,img,mota,iddm) values('$tensp', '$giasp','$hinh', '$mota', '$iddm')";
+    // $sql="INSERT INTO sanpham ( name,price,img,mota,iddm) VALUES ( '$tensp', '$giasp','$hinh', '$mota', '$iddm',)";
     pdo_execute($sql);
 }
 function delete_sanpham($id){
@@ -35,11 +36,17 @@ function load_sanpham_cungloai($id){
     return $listsanpham;
 }
 function loadall_sanpham_top10(){
-    $sql="select * from sanpham where 1 order by luotxem desc limit 0,10";
+    $sql="select * from sanpham where 1 order by luotxem desc limit 0,4";
     $listsanpham=pdo_query($sql);
     return $listsanpham;
 }
-function loadall_sanpham($keyw="",$iddm=0){
+
+function loadall_sanpham_top02(){
+    $sql="select * from sanpham where 1 order by luotxem asc limit 0,1";
+    $listsanpham=pdo_query($sql);
+    return $listsanpham;
+}
+function loadall_sanpham($keyw,$iddm){
     $sql="select * from sanpham where 1";
     // where 1 tức là nó đúng
     if($keyw!=""){
@@ -64,7 +71,7 @@ function update_sanpham($id,$iddm,$tensp,$giasp,$mota,$hinh){
     pdo_execute($sql);
 }
 function loadall_sanpham_home(){
-    $sql="select * from sanpham where 1 order by id desc limit 0,9";
+    $sql="select * from sanpham where 1 order by id desc limit 0,6";
     $listsanpham=pdo_query($sql);
     return  $listsanpham;
 }
