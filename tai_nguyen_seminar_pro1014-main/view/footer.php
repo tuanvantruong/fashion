@@ -5,7 +5,7 @@
         <div class="footer-top">
           <div class="row">
             <div class="col-md-8">
-              <div class="f-logo left-side"> <a href="index.html"> <img src="images/footer-logo.png" alt="Honour"> </a> </div>
+              <div class="f-logo left-side"> <a href="index.php"> <img src="images/footer-logo.png" alt="Honour"> </a> </div>
               <p>Passage of Lorem Ipsum, you need toe sure there isn't anything embarrassing hidden in the middle of text.  All the Lorem Ipsum </p>
             </div>
             <div class="col-md-4">

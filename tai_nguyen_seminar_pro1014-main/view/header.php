@@ -71,7 +71,7 @@
       <div class="header-inner">
         <div class="navbar-header">
           <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
-          <a class="navbar-brand page-scroll" href="index.html"> <img alt="Honour" src="images/logo.png"> </a> </div>
+          <a class="navbar-brand page-scroll" href="index.php"> <img alt="Honour" src="images/logo.png"> </a> </div>
         <div class="right-side float-none-sm">
           <div id="menu" class="navbar-collapse collapse left-side" >
             <ul class="nav navbar-nav navbar-left">
