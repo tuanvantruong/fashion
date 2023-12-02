@@ -25,6 +25,7 @@
                 
                 <?php
                 echo' <div class="col-sm-6">
+                <div class="mt-30"> <a href="index.php" class="btn btn-black"><span><i class="fa fa-angle-left"></i></span>Continue Shopping</a> </div>
               </div>
               <div class="col-sm-6">
                 <div class="mt-30 right-side float-none-xs"> <a class="btn btn-black">Update Cart</a> </div>
