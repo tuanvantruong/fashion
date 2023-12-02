@@ -89,8 +89,10 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case "sanphamct":
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $id = $_GET['idsp'];
-                $sp_cung_loai = load_sanpham_cungloai($id);
                 $onesp = loadone_sanpham($id);
+                extract($onesp);
+                $sp_cung_loai = load_sanpham_cungloai($id,$iddm);
+                
                 include "view/sanphamct.php";
             } else {
                 include "view/home.php";
