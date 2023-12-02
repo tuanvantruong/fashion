@@ -89,6 +89,7 @@
                 $i=0;
                        foreach ($sanpham as $sp ) {
                         extract($sp);
+                        $linksp="index.php?act=sanphamct&idsp=".$id;
                         $hinh=$img_path.$img;
                         if(($i==2)||($i==5)||($i==8)){
                            $mr="";
@@ -97,7 +98,7 @@
                         }
                         echo ' <div class="item '.$mr.'">
                         <div class="product-item">
-                          <div class="product-image"> <a href="product-page.html"> <img src="'.$hinh.'" alt=""> </a>
+                          <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                           <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
                             <ul>
@@ -116,7 +117,7 @@
                         </div>
                           </div>
                           <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">'.$name.'</a> </div>
+                            <div class="product-item-name"> <a href="'.$linksp.'">'.$name.'</a> </div>
                             <div class="price-box"> <span class="price">'.$price.'</span> </div>
                           </div>
                         </div> 
