@@ -235,7 +235,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="cart-icon"> <a href="#"> <span> <small class="cart-notification">2</small> </span> </a>
+              <li class="cart-icon"> <a href="index.php?act=addtocart"> <span> <small class="cart-notification">2</small> </span> </a>
                 <div class="cart-dropdown header-link-dropdown">
                   <ul class="cart-list link-dropdown-list">
                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
@@ -267,7 +267,7 @@
                   </ul>
                   <p class="cart-sub-totle"> <span class="pull-left">Cart Subtotal</span> <span class="pull-right"><strong class="price-box">$29.98</strong></span> </p>
                   <div class="clearfix"></div>
-                  <div class="mt-20"> <a href="cart.html" class="btn-color btn">Cart</a> <a href="checkout.html" class="btn-color btn right-side">Checkout</a> </div>
+                  <div class="mt-20"> <a href="index.php?act=addtocart" class="btn-color btn">Cart</a> <a href="index.php?act=bill" class="btn-color btn right-side">Checkout</a> </div>
                 </div>
               </li>
             </ul>
