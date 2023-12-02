@@ -42,6 +42,7 @@
                 <th>TÊN SẢN PHẨM</th>
                 <th>Giá</th>
                 <th>Hình</th>
+                <th>Số lượng</th>
                 <th>Lượt xem</th>
                 <th></th>
             </tr>
@@ -62,6 +63,7 @@
              <td>'.$name.'</td>
              <td>'.$price.'</td>
              <td>'.$hinh.'</td>
+             <td>'.$soluong.'</td>
              <td>'.$luotxem.'</td>
              <td><a href="'.$suasp.'"><input type="button" value="Sửa"> </a>  <a href="'.$xoasp.'"><input type="button" value="Xóa"></a> </td>
                </tr>';

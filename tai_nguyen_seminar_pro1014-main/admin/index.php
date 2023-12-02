@@ -73,7 +73,7 @@ if(isset($_GET['act'])){
                     $tensp=$_POST['tensp'];
                     $giasp=$_POST['giasp'];
                     $mota=$_POST['mota'];
-                  
+                    $soluong=$_POST['soluong'];
                     $hinh=$_FILES['hinh']['name'];
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
@@ -83,7 +83,7 @@ if(isset($_GET['act'])){
                     // echo "Sorry, there was an error uploading your file.";
                       }
 
-                       insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
+                       insert_sanpham($tensp,$giasp,$hinh,$mota ,$soluong,$iddm);
                     // phải có iddm vì nó là khóa ngoại
                         $thongbao="thêm thành công!";
                    }
@@ -127,6 +127,7 @@ if(isset($_GET['act'])){
                         $tensp=$_POST['tensp'];
                         $giasp=$_POST['giasp'];
                         $mota=$_POST['mota'];
+                        $soluong=$_POST['soluong'];
                         $hinh=$_FILES['hinh']['name'];
                         $target_dir = "../upload/";
                         $target_file = $target_dir . basename($_FILES["hinh"]["name"]);

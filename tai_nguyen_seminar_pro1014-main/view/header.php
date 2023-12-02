@@ -82,12 +82,8 @@
                       foreach ($dsdm as $dm) {
                         extract($dm);
                         $linkdm="index.php?act=sanpham&iddm=".$id;
-                        echo '<li class="level"> <span class="opener plus"></span> <a href="'.$linkdm.'" class="page-scroll">'.$name.'</a></li>'
-                        
-                        ;
-                        
+                        echo '<li class="level"> <span class="opener plus"></span> <a href="'.$linkdm.'" class="page-scroll">'.$name.'</a></li>';             
                       }
-
                      ?>
               <!-- <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a> -->
                 <!-- <div class="megamenu mobile-sub-menu">

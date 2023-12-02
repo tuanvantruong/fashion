@@ -119,12 +119,22 @@
                             <div class="product-item-name"> <a href="product-page.html">'.$name.'</a> </div>
                             <div class="price-box"> <span class="price">'.$price.'</span> </div>
                           </div>
-                        </div>
+                        </div> 
+                        <li class="pro-cart-icon">
+                        <form action="index.php?act=addtocart" method="post">
+                          <input type="hidden" name="id" value="'.$id.'">
+                          <input type="hidden" name="name" value="'.$name.'">
+                          <input type="hidden" name="img" value="'.$img.'">
+                          <input type="hidden" name="price" value="'.$price.'">
+                          <input type="submit" name="addtocart" class="btn-black" value="Add To Cart">
+                          
+                        </form>
+                      </li>
                       </div>';
                          $i+=1;
                         
                        }
-                ?>
+                ?>             
                 <!-- <div class="item">
                   <div class="product-item">
                     <div class="sale-label"><span>Sale</span></div>

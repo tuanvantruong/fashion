@@ -5,8 +5,10 @@ include "model/sanpham.php";
 include "model/taikhoan.php";
 include "model/danhmuc.php";
 include "model/order.php";
+include "model/cart.php";
 ///ảnh lên home
 include "global.php";
+if(!isset($_SESSION['mycart'])) $_SESSION['mycart']=[];
 $sanpham = loadall_sanpham_home();
 $dsdm = loadall_danhmuc();
 $dstop10 = loadall_sanpham_top10();
@@ -152,12 +154,81 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             header('Location: index.php');
             include "view/gioithieu.php";
             break;
+        case "addtocart":
+            if(isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                $id=$_POST['id'];
+                $name=$_POST['name'];
+                $img=$_POST['img'];
+                $price=$_POST['price'];
+                $soluong=1;
+                $ttien= $price * $soluong;
+                $spadd=[$id,$name,$img,$price,$soluong,$ttien];
+                array_push($_SESSION['mycart'],$spadd);              
+            }
+            include "view/cart/viewcart.php";
+            break;
+            case "delcart":
+                if(isset($_GET['idcart'])){
+                    array_slice($_SESSION['mycart'],$_GET['idcart'],1);
+                }else{
+                    $_SESSION['mycart']=[];
+                }
+                header('Location: index.php?act=viewcart');
+                break;
+            case "bill":
+                include "view/cart/bill.php";
+                break;
         case "gioithieu":
             include "view/gioithieu.php";
             break;
         case "lienhe":
             include "view/lienhe.php";
             break;
+            case "product-page":
+                include "view/product-page.php";
+                break;
+            case "about":
+                include "view/about.php";
+                break;
+            case "account":
+                include "view/account.php";
+                break;
+            case "blog":
+                include "view/blog.php";
+                break;
+            case "cart":
+                include "view/cart.php";
+                break;
+            case "checkout":
+                include "view/checkout.php";
+                break;
+            case "contact":
+                include "view/contact.php";
+                break;
+            case "login":
+                include "view/login.php";
+                break;
+            case "order-complete":
+                include "view/order-complete.php";
+                break;
+            case "order-overview":
+                include "view/order-overview.php";
+                break;
+            case "payment":
+                include "view/payment.php";
+                break;
+            case "register":
+                include "view/register.php";
+                break;
+            case "shop-list":
+                include "view/shop-list.php";
+                break;
+            case "shop":
+                include "view/shop.php";
+                break;
+            case "single-blog":
+                include "view/single-blog.php";
+                break;
         default:
             include "view/home.php";
             break;

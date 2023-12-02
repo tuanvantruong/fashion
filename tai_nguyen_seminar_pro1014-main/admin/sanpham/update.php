@@ -50,6 +50,15 @@ if(is_file($hinhpath)){
             <label>Mô tả: </label> <br>
            <textarea name="mota" id="" cols="30" rows="10"> <?=$mota?></textarea>
            </div>
+           <div class="row2 mb10">
+            <label>Số lượng: </label> <br>
+            <select name="soluong" id="">
+              <option id="1" value="1">1</option>
+              <option id="2" value="2">2</option>
+              <option id="3" value="3">3</option>
+              <option id="4" value="4">4</option>
+            </select>
+           </div>
            <div class="row mb10 ">
             <input type="hidden" name="id" value="<?=$id?>">
          <input class="mr20" name="capnhat" type="submit" value="Cập Nhật">
