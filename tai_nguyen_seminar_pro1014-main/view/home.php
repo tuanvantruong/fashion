@@ -101,11 +101,15 @@
                           <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
                             <ul>
-                              <li class="pro-cart-icon">
-                                <form>
-                                  <button title="Add to Cart"></button>
-                                </form>
-                              </li>
+                            <li class="pro-cart-icon">
+                            <form action="index.php?act=addtocart" method="post">
+                            <input type="hidden" name="id" value="'.$id.'">
+                            <input type="hidden" name="name" value="'.$name.'">
+                            <input type="hidden" name="img" value="'.$img.'">
+                            <input type="hidden" name="price" value="'.$price.'">
+                              <button title="Add to Cart" name="addtocart" ></button>
+                            </form>
+                          </li>
                               <li class="pro-wishlist-icon"><a href="#"></a></li>
                               <li class="pro-compare-icon"><a href="#"></a></li>
                             </ul>
@@ -1520,11 +1524,16 @@
                             <a href="#" class="more-link">Learn More</a>
                             <div class="bottom-detail">
                               <ul>
-                                <li class="pro-cart-icon">
-                                  <form>
-                                    <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
-                                  </form>
-                                </li>
+                              <li class="pro-cart-icon">
+                              <form action="index.php?act=addtocart" method="post">
+                                 <input type="hidden" name="id" value="'.$id.'">
+                                 <input type="hidden" name="name" value="'.$name.'">
+                                 <input type="hidden" name="img" value="'.$img.'">
+                                 <input type="hidden" name="price" value="'.$price.'"> 
+                                <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
+                              </form>
+                            </li>
+
                                 <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
                                 <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
                               </ul>
