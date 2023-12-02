@@ -248,8 +248,8 @@
             <div class="owl-carousel pro_cat_slider"><!-- id="product-slider" -->
               
             <?php
-                 foreach ($sp_cung_loai as $sp_cung_loai) {
-                    extract($sp_cung_loai);
+                 foreach ($sp_cung_loai as $spcl) {
+                    extract($spcl);
                     $img=$img_path.$img;
                     $linksp="index.php?act=sanphamct&idsp=".$id;
                     echo '<div class="item">
@@ -259,11 +259,15 @@
                         <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
                             <ul>
-                              <li class="pro-cart-icon">
-                                <form>
-                                  <button title="Add to Cart"></button>
-                                </form>
-                              </li>
+                            <li class="pro-cart-icon">
+                            <form action="index.php?act=addtocart" method="post">
+                            <input type="hidden" name="id" value="'.$id.'">
+                            <input type="hidden" name="name" value="'.$name.'">
+                            <input type="hidden" name="img" value="'.$img.'">
+                            <input type="hidden" name="price" value="'.$price.'">
+                              <button title="Add to Cart" name="addtocart" ></button>
+                            </form>
+                          </li>
                               <li class="pro-wishlist-icon"><a href="#"></a></li>
                               <li class="pro-compare-icon"><a href="#"></a></li>
                             </ul>
