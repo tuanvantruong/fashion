@@ -38,16 +38,18 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             if ((isset($_POST['keyw']) && ($_POST['keyw'] != ""))) {
                 $keyw = $_POST['keyw'];
             } else {
-                $keyw = "";
+               $keyw = "";
             }
             if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
                 $iddm = $_GET['iddm'];
+                $dssp = loadall_sanpham("", $iddm);
+                $tendm = load_ten_dm($iddm);
+                include "view/sanpham.php";
             } else {
                 $iddm = 0;
+                include "view/home.php";
             }
-            $dssp = loadall_sanpham($keyw, $iddm);
-            $tendm = load_ten_dm($iddm);
-            include "view/sanpham.php";
+            
             break;
         case "order":
             if (isset($_SESSION['cart'])) {

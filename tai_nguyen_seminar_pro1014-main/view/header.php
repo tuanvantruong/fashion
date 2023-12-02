@@ -82,7 +82,34 @@
                       foreach ($dsdm as $dm) {
                         extract($dm);
                         $linkdm="index.php?act=sanpham&iddm=".$id;
-                        echo '<li class="level"> <span class="opener plus"></span> <a href="'.$linkdm.'" class="page-scroll">'.$name.'</a></li>';             
+                        echo ' <li class="level"> <span class="opener plus"></span> <a href="'.$linkdm.'" class="page-scroll">'.$name.'</a> 
+                         <div class="megamenu mobile-sub-menu">
+                          <div class="megamenu-inner-top">
+                            <ul class="sub-menu-level1">
+                              <li class="level2"> <a href="shop.html"><span>Women Clothings</span></a>
+                                <ul class="sub-menu-level2">
+                                  <li class="level3"><a href="shop.html"><span>■</span>Dresses</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Sport Jeans</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Skirts</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Tops</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Sleepwear</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Jeans</a></li>
+                                </ul>
+                              </li>
+                              <li class="level2"> <a href="shop.html"><span>Women Fashion</span></a>
+                                <ul class="sub-menu-level2 ">
+                                  <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Sport Shoes</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Phone Cases</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                                  <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div> 
+                       </li> ';             
                       }
                      ?>
               <!-- <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a> -->
@@ -199,16 +226,16 @@
           </div>
           <div class="right-side float-left-xs header-right-link">
             <ul>
-              <li class="main-search">
+               <li class="main-search">
                 <div class="header_search_toggle desktop-view">
                   <form>
                     <div class="search-box">
-                      <input class="input-text" type="text" placeholder="Search entire store here...">
+                      <input class="input-text" type="text" placeholder="sssSearch entire store here...">
                       <button class="search-btn"></button>
                     </div>
                   </form>
                 </div>
-              </li>
+              </li> 
               <li class="account-icon"> <a href="#"><span></span></a>
                 <div class="header-link-dropdown account-link-dropdown">
                   <ul class="link-dropdown-list">
@@ -273,14 +300,7 @@
             </ul>
           </div>
         </div>
-        <div class="header_search_toggle mobile-view">
-          <form>
-            <div class="search-box">
-              <input class="input-text" type="text" placeholder="Search entire store here...">
-              <button class="search-btn"></button>
-            </div>
-          </form>
-        </div>
+        
       </div>
     </div>
   </header>

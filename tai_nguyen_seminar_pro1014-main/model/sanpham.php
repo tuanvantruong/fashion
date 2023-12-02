@@ -46,7 +46,7 @@ function loadall_sanpham_top02(){
     $listsanpham=pdo_query($sql);
     return $listsanpham;
 }
-function loadall_sanpham($keyw,$iddm){
+function loadall_sanpham($keyw="",$iddm=0){
     $sql="select * from sanpham where 1";
     // where 1 tức là nó đúng
     if($keyw!=""){

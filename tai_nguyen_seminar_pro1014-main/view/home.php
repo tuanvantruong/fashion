@@ -101,7 +101,7 @@
                           <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                           <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
-                            <ul>
+                          <ul>
                             <li class="pro-cart-icon">
                             <form action="index.php?act=addtocart" method="post">
                             <input type="hidden" name="id" value="'.$id.'">
@@ -110,10 +110,10 @@
                             <input type="hidden" name="price" value="'.$price.'">
                               <button title="Add to Cart" name="addtocart" ></button>
                             </form>
-                          </li>
+                            </li>
                               <li class="pro-wishlist-icon"><a href="#"></a></li>
                               <li class="pro-compare-icon"><a href="#"></a></li>
-                            </ul>
+                          </ul>
                           </div>
                           <div class="rating-summary-block right-side">
                             <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
