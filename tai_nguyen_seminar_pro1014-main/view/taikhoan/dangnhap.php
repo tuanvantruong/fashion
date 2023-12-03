@@ -72,7 +72,39 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="row">
-            <div class="col-lg-6 col-md-8 col-sm-8 col-lg-offset-3 col-sm-offset-2"> 
+            <div class="col-lg-6 col-md-8 col-sm-8 col-lg-offset-3 col-sm-offset-2">
+              <?php
+                        if(isset($_SESSION['user'])){
+                          extract($_SESSION['user']);
+                          ?>
+                             <div class="col-xs-12">
+                    <div class="input-box">
+                      <h3>Hello. Wellcome to my website</h3><br>
+                           <?=$user?>
+                      
+                    </div>
+                  </div>
+                   
+                  <div class="col-xs-12">
+                    <div class="input-box">
+                        <!-- <div class="col-xs-12"> <a title="Forgot Password" class="forgot-password mtb-20" href="index.php?act=quenmk">Forgot your password?</a>
+                         <hr>
+                        </div> -->
+                      <div class="new-account align-center mt-20">  <a class="link" title="Register with Honour" href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a> </div>
+
+                      <?php if($role==1){ ?>
+                      <div class="new-account align-center mt-20">  <a class="link" title="Register with Honour" href="admin/index.php">Đăng nhập Admin</a> </div>
+                      <?php }?>
+                      <div class="new-account align-center mt-20">  <a class="link" title="Register with Honour" href="index.php?act=thoat">Thoát</a> </div>
+                    
+                    </div>
+                  </div>
+
+              <?php
+
+                        }else{
+              ?>
+            
               <form action="index.php?act=dangnhap" method="post" class="main-form full">
               <div class="row">
                   <div class="col-xs-12 mb-20">
@@ -101,7 +133,7 @@
                     <!-- <button name="submit" type="submit" class="btn-color right-side">Log In</button> -->
                     <input class="submit" type="submit" name="dangnhap" value="Sign in">
                   </div>
-                  <div class="col-xs-12"> <a title="Forgot Password" class="forgot-password mtb-20" href="#">Forgot your password?</a>
+                  <div class="col-xs-12"> <a title="Forgot Password" class="forgot-password mtb-20" href="index.php?act=quenmk">Forgot your password?</a>
                     <hr>
                   </div>
                   <div class="col-xs-12">
@@ -109,6 +141,10 @@
                   </div>
                 </div>
               </form>
+
+              <?php
+                           }
+              ?>
             </div>
           </div>
         </div>

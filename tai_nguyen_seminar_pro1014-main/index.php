@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 include "model/pdo.php";
 include "model/sanpham.php";
 include "model/taikhoan.php";
@@ -118,7 +119,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
                     // $_SESSION['pass'] = $checkuser;
-                    header('Location: index.php');
+                    header('Location: index.php?act=dangnhap');
                     // $thongbao="bạn đã đăng nhập thành công ";
                 } else {
                     $thongbao = "tài khoản không tồn tại. Vui lòng đăng ký";
@@ -135,7 +136,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $tel = $_POST['tel'];
                 $id = $_POST['id'];
                 update_taikhoan($id, $user, $pass, $email, $address, $tel);
-                $_SESSION['user'] = checkuser($user, $pass);
+                $_SESSION['user'] =checkuser($user, $pass);
 
                 header('Location: index.php?act=edit_taikhoan');
             }
@@ -144,7 +145,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case "quenmk":
             if (isset($_POST['guiemail']) && ($_POST['guiemail'])) {
                 $email = $_POST['email'];
-                $checkemail = checkemail($email);
+                $checkemail=checkemail($email);
                 if (is_array($checkemail)) {
                     $thongbao = "Mật khẩu của bạn là:" . $checkemail['pass'];
                 } else {
@@ -156,7 +157,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case "thoat":
             session_unset();
             header('Location: index.php');
-            include "view/gioithieu.php";
+            // include "view/gioithieu.php";
             break;
         case "addtocart":
             if(isset($_POST['addtocart']) && ($_POST['addtocart'])) {

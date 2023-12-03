@@ -142,7 +142,34 @@ if(isset($_GET['act'])){
                        $listsanpham=loadall_sanpham("",0);
                        $listdanhmuc=loadall_danhmuc();
                     include "sanpham/list.php";
-                    break;
+                break;
+                case 'dskh':
+                    $listtaikhoan=loadall_taikhoan();
+                    include "taikhoan/list.php";
+                break;
+
+
+                case 'xoatk':
+                    // muốn xóa thì phải kiểm tra id
+                    if(isset($_GET['id'])&&($_GET['id'])>0){
+                        delete_taikhoan($_GET['id']);
+                        
+                    }
+    
+                    $listtaikhoan=loadall_taikhoan();
+                    include "taikhoan/list.php";
+                break;
+                 
+
+                case "suatk":
+                    //vì là hàm có trả về nên 
+                    if(isset($_GET['id'])&&($_GET['id']>0)){
+                   $listtaikhoan=loadall_taikhoan($_GET['id']);
+                    }
+                    $listtaikhoan=loadall_taikhoan();
+                    include "taikhoan/update.php";
+                break;
+
             default:
             include "home.php";
             break;
