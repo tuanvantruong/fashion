@@ -9,7 +9,7 @@ function checkuser($user,$pass){
     return $sp;
 }
 function checkemail($email){
-    $sql="select * from taikhoan where `email`={$email}";
+    $sql="select * from taikhoan where email='".$email."'";
     $sp=pdo_query_one($sql);
     return $sp;
 }
@@ -31,4 +31,4 @@ function loadall_taikhoan(){
     $listtaikhoan=pdo_query($sql);
     return  $listtaikhoan;
 }
-?>
+// ?>

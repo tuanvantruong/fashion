@@ -6,7 +6,7 @@
         <h1 class="banner-title">Women</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
+            <li><a href="index.php">Home</a>/</li>
             <li><span>Women</span></li>
           </ul>
         </div>

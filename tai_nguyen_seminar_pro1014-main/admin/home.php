@@ -1,4 +1,4 @@
-<h1>Control Panel</h1>
+<h1></h1>
 
 
 

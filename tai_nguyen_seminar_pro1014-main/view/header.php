@@ -34,6 +34,7 @@
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/nhom.css">
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
@@ -238,8 +239,8 @@
                   <ul class="link-dropdown-list">
                     <li> <span class="dropdown-title">Default welcome msg!</span>
                       <ul>
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="register.html">Create an Account</a></li>
+                        <li><a href="index.php?act=dangnhap">Sign In</a></li>
+                        <li><a href="index.php?act=dangky">Create an Account</a></li>
                       </ul>
                     </li>
                     <li> <span class="dropdown-title">Language :</span>
