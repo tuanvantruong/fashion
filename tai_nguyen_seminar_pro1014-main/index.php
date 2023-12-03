@@ -6,6 +6,7 @@ include "model/taikhoan.php";
 include "model/danhmuc.php";
 include "model/order.php";
 include "model/cart.php";
+// include "order-complete.php";
 ///ảnh lên home
 include "global.php";
 if(!isset($_SESSION['mycart'])) $_SESSION['mycart']=[];
@@ -177,8 +178,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 }else{
                     $_SESSION['mycart']=[];
                 }
+                // include "view/cart/viewcart.php";
                 header('Location: index.php?act=viewcart');
                 break;
+            case 'viewcart':
+            include "view/cart/viewcart.php";
+            break;
             case "bill":
                 include "view/cart/bill.php";
                 break;

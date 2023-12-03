@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
@@ -78,7 +75,7 @@
 
 
 
-                     <?php
+            <?php
                       foreach ($dsdm as $dm) {
                         extract($dm);
                         $linkdm="index.php?act=sanpham&iddm=".$id;
@@ -111,7 +108,7 @@
                         </div> 
                        </li> ';             
                       }
-                     ?>
+                     ?>  
               <!-- <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a> -->
                 <!-- <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">

@@ -7,8 +7,8 @@
         <h1 class="banner-title">Checkout</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><a href="cart.html">Cart</a>/</li>
+            <li><a href="index.php">Home</a>/</li>
+            <li><a href="index.php?act=addtocart">Cart</a>/</li>
             <li><span>Checkout</span></li>
           </ul>
         </div>
@@ -24,19 +24,19 @@
         <div class="col-xs-12">
           <div class="checkout-step mb-40">
             <ul>
-              <li class="active"> <a href="checkout.html">
+              <li class="active"> <a href="index.php?act=bill">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
                 <span>Shipping</span> </a> </li>
-              <li> <a href="payment.html">
+              <li> <a href="index.php?act=payment">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
                 <span>Payment</span> </a> </li>
-              <li> <a href="order-complete.html">
+              <li> <a href="index.php?act=order-complete">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">3</div>
@@ -160,7 +160,7 @@
                           <label for="chk-billing-address">Use my delivery address as my billing address</label>
                         </div>
                       </div>
-                      <div class="col-sm-12"> <a href="payment.html" class="btn btn-color right-side">Next</a> </div>
+                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side">Next</a> </div>
               </table>
             </div>
           </div>
