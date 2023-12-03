@@ -117,14 +117,14 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $checkuser = checkuser($user, $pass);
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
-                    $_SESSION['pass'] = $checkuser;
+                    // $_SESSION['pass'] = $checkuser;
                     header('Location: index.php');
                     // $thongbao="bạn đã đăng nhập thành công ";
                 } else {
                     $thongbao = "tài khoản không tồn tại. Vui lòng đăng ký";
                 }
             }
-            include "view/taikhoan/dangky.php";
+            include "view/taikhoan/dangnhap.php";
             break;
         case "edit_taikhoan":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
