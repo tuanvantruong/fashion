@@ -36,23 +36,21 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/listCartOrder.php";
             break;
-        case "sanpham":
-            if ((isset($_POST['keyw']) && ($_POST['keyw'] != ""))) {
-                $keyw = $_POST['keyw'];
-            } else {
-               $keyw = "";
-            }
-            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                $iddm = $_GET['iddm'];
-                $dssp = loadall_sanpham("", $iddm);
+            case "sanpham":
+                if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
+                    $kyw = $_POST['kyw'];
+                } else {
+                    $keyw = "";
+                }
+                if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
+                    $iddm = $_GET['iddm'];
+                } else {
+                    $iddm =0;
+                }
+                $dssp = loadall_sanpham($kyw, $iddm);
                 $tendm = load_ten_dm($iddm);
                 include "view/sanpham.php";
-            } else {
-                $iddm = 0;
-                include "view/home.php";
-            }
-            
-            break;
+                break;
         case "order":
             if (isset($_SESSION['cart'])) {
                 $cart = $_SESSION['cart'];
