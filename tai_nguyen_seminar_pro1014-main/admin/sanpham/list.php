@@ -51,7 +51,7 @@
           <form action="#" method="POST">
            <div class="row2 mb10 formds_loai">
             <form action="index.php?act=listsp" method="POST">
-                <input type="text" name="keyw">
+                <input type="text" name="keyw" placeholder="Search entire store here...">
                 <select name="iddm" id="">
                     <option value="0" selected>Tất cả</option>
                     <?php
