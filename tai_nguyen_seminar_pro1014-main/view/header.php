@@ -226,9 +226,9 @@
             <ul>
                <li class="main-search">
                 <div class="header_search_toggle desktop-view">
-                  <form>
+                <form action="index.php?act=sanpham" method="post">
                     <div class="search-box">
-                      <input class="input-text" type="text" placeholder="sssSearch entire store here...">
+                      <input class="input-text" name="kyw" type="text" placeholder="Search entire store here...">
                       <button class="search-btn"></button>
                     </div>
                   </form>
