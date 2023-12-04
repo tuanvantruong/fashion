@@ -40,7 +40,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
                     $kyw = $_POST['kyw'];
                 } else {
-                    $keyw = "";
+                    $kyw = "";
                 }
                 if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
                     $iddm = $_GET['iddm'];
