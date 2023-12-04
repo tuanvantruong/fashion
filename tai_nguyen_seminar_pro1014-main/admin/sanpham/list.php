@@ -8,7 +8,35 @@
     <link rel="stylesheet" href="css1/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
-     
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        td {
+            color: #666;
+        }
+        /* Các phần tử nút */
+        input[type="button"] {
+            padding: 15px 30px;
+            border: none;
+            background-color: black ;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        input[type="button"]:hover {
+            background-color: #b9a06f;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +51,7 @@
           <form action="#" method="POST">
            <div class="row2 mb10 formds_loai">
             <form action="index.php?act=listsp" method="POST">
-                <input type="text" name="keyw">
+                <input type="text" name="keyw" placeholder="Search entire store here...">
                 <select name="iddm" id="">
                     <option value="0" selected>Tất cả</option>
                     <?php
@@ -42,7 +70,6 @@
                 <th>TÊN SẢN PHẨM</th>
                 <th>Giá</th>
                 <th>Hình</th>
-                <th>Số lượng</th>
                 <th>Lượt xem</th>
                 <th></th>
             </tr>
@@ -63,7 +90,7 @@
              <td>'.$name.'</td>
              <td>'.$price.'</td>
              <td>'.$hinh.'</td>
-             <td>'.$soluong.'</td>
+             
              <td>'.$luotxem.'</td>
              <td><a href="'.$suasp.'"><input type="button" value="Sửa"> </a>  <a href="'.$xoasp.'"><input type="button" value="Xóa"></a> </td>
                </tr>';

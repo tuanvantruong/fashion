@@ -13,9 +13,6 @@ if(isset($_GET['act'])){
     $act=$_GET['act'];
     switch($act){
 
-
-
-
         case 'adddm':
             // Kiểm tra xem người có click vào nut add hay không 
             if(isset($_POST['themmoi']) && $_POST['themmoi']){

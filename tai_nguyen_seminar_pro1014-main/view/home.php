@@ -121,7 +121,7 @@
                         </div>
                           </div>
                           <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">'.$name.'</a> </div>
+                            <div class="product-item-name"> <a href="'.$linksp.'">'.$name.'</a> </div>
                             <div class="price-box"> <span class="price">'.$price.'</span> </div>
                           
                           </div>
