@@ -133,18 +133,11 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery-ui.min.js"></script> 
 <script src="js/fotorama.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>  
+<script src="js/jquery.magnific-popup.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 
 <script src="js/custom.js"></script>
 
-<script>
-  /* ------------ Newslater-popup JS Start ------------- */
-  $(window).load(function() {
-    $.magnificPopup.open({
-      items: {src: '#newslater-popup'},type: 'inline'}, 0);
-  });
-    /* ------------ Newslater-popup JS End ------------- */
-</script>
+
 
 </body>
 
