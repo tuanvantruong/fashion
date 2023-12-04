@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-md-8">
               <div class="f-logo left-side"> <a href="index.php"> <img src="images/footer-logo.png" alt="Honour"> </a> </div>
-              <p>Passage of Lorem Ipsum, you need toe sure there isn't anything embarrassing hidden in the middle of text.  All the Lorem Ipsum </p>
+              <p>Liên hệ với chúng tôi qua các trang mạng xã hội</p>
             </div>
             <div class="col-md-4">
               <div class="footer_social right-side float-none-sm pt-sm-15 center-sm mt-sm-15">
@@ -25,25 +25,25 @@
           <div class="row">
             <div class="col-md-3 f-col">
               <div class="footer-static-block"> <span class="opener plus"></span>
-                <h3 class="title">Address</h3>
+                <h3 class="title">Địa chỉ</h3>
                 <ul class="footer-block-contant address-footer">
                   <li class="item"> <i class="fa fa-map-marker"> </i>
-                    <p>150-A Appolo aprtment, opp. Hopewell Junction, Allen st Road, new york-405001.</p>
+                    <p>Khu 2 , Hoàng Cương , Thanh Ba , Phú Thọ</p>
                     <hr>
                   </li>
                   <li class="item"> <i class="fa fa-envelope-o"> </i>
-                    <p> <a>infoservices@honour.com </a> </p>
+                    <p> <a>viethoangdeptrai@gmail.com </a> </p>
                     <hr>
                   </li>
                   <li class="item"> <i class="fa fa-phone"> </i>
-                    <p>(+91) 9834567890</p>
+                    <p>0382528404</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-3 f-col">
               <div class="footer-static-block"> <span class="opener plus"></span>
-                <h3 class="title">Tag</h3>
+                <h3 class="title">Từ khóa</h3>
                 <ul class="footer-block-contant tagcloud">
                   <li><a>Orange</a></li>
                   <li><a>Neutral</a></li>
@@ -59,34 +59,32 @@
             </div>
             <div class="col-md-3 f-col">
               <div class="footer-static-block"> <span class="opener plus"></span>
-                <h3 class="title">Services</h3>
+                <h3 class="title">Dịch vụ</h3>
                 <ul class="footer-block-contant link">
-                  <li><a><span>■</span> About Us</a></li>
-                  <li><a><span>■</span> Jobs</a></li>
-                  <li><a><span>■</span> Affiliates</a></li>
-                  <li><a><span>■</span> Contact</a></li>
-                  <li><a><span>■</span> About Us</a></li>
-                  <li><a><span>■</span> Jobs</a></li>
-                  <li><a><span>■</span> Affiliates</a></li>
+                  <li><a><span>■</span> Về chúng tôi</a></li>
+                  <li><a><span>■</span> Tuyển dụng</a></li>
+                  <li><a><span>■</span> Chi nhánh</a></li>
+                  <li><a><span>■</span> Liên hệ</a></li>
+                
                 </ul>
               </div>
             </div>
             <div class="col-md-3 f-col">
               <div class="footer-static-block"> <span class="opener plus"></span>
-                <h3 class="title">Contact Us</h3>
+                <h3 class="title">Liên hệ với chúng tôi</h3>
                 <div class="footer-block-contant">
                   <form>
                     <div class="field">
-                      <input type="text" placeholder="Name" required>
+                      <input type="text" placeholder="Họ tên khách hàng" required>
                     </div>
                     <div class="field">
                       <input type="email" placeholder="Email" required>
                     </div>
                     <div class="field">
-                      <textarea name="Message" placeholder="Message" required id="message" cols="5" rows="2"></textarea>
+                      <textarea name="Message" placeholder="Lời nhắn" required id="message" cols="5" rows="2"></textarea>
                     </div>
                     <div class="field">
-                      <button title="Subscribe" class="btn-color">Submit</button>
+                      <button title="Subscribe" class="btn-color">Phản hồi</button>
                     </div>
                   </form>
                 </div>

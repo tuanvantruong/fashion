@@ -1625,12 +1625,12 @@
         <div class="col-md-4">
           <div class="newsletter">
             <div class="newsletter-inner"> <img src="images/newsletter-icon.png" alt="Honour">
-              <h2 class="main_title">Subscribe Emails</h2>
-              <span>Get Latest News & Update</span>
-              <p>also the leap into electronic typesetting, remaining essentially</p>
+              <h2 class="main_title">Đăng kí nhận ưu đãi</h2>
+              <span>Nhận ưu đãi mới nhất và cập nhật tin tức</span>
+              <p>Mã giảm giá và tin tức thời trang</p>
               <form>
-                <input type="email" placeholder="Email Here...">
-                <button class="btn-black" title="Subscribe">Subscribe</button>
+                <input type="email" placeholder="Nhập email tại đây">
+                <button class="btn-black" title="Subscribe">Đăng kí</button>
               </form>
             </div>
           </div>
@@ -1642,29 +1642,29 @@
     <div class="container">
       <div class="client-inner">
         <div class="heading-part mb-40">
-          <h2 class="main_title">What Our Clients Say</h2>
+          <h2 class="main_title">Khách hàng của chúng tôi nói gì</h2>
         </div>
         <div id="client" class="owl-carousel">
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
         </div>
       </div>
@@ -1675,7 +1675,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="heading-part align-center mb-40">
-            <h2 class="main_title">Latest News</h2>
+            <h2 class="main_title">Tin tức mới nhất</h2>
           </div>
         </div>
       </div>
@@ -1683,12 +1683,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img1.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>01 jan 2017</span>
+            <div class="blog-detail"> <span>01 jan 2027</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1698,12 +1698,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img2.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>02 jan 2017</span>
+            <div class="blog-detail"> <span>02 jan 2027</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1713,12 +1713,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img3.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>03 jan 2017</span>
+            <div class="blog-detail"> <span>03 jan 2025</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1735,7 +1735,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="heading-part align-center mb-40">
-            <h2 class="main_title">Top Brand</h2>
+            <h2 class="main_title">Các thương hiệu</h2>
           </div>
         </div>
       </div>
