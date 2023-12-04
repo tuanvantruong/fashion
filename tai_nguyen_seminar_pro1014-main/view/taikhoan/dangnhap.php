@@ -142,6 +142,14 @@
                 </div>
               </form>
 
+              <h4 class="thongbao">
+                <?php
+                             if(isset($thongbao)&&($thongbao!="")){
+                              echo "$thongbao";
+                             }
+           ?>
+                </h4>
+
               <?php
                            }
               ?>
