@@ -109,7 +109,7 @@
               <li><a>Lighting</a></li>
             </ul>
           </div>
-          <div class="copy-right">© 2017  All Rights Reserved. Design By <a href="#">WebcoTheme</a></div>
+          <div class="copy-right">© 2023  All Rights Reserved. Design By  <a href="#">Nhóm 7</a></div>
           <div class="payment">
             <ul class="payment_icon">
               <li class="discover"><a></a></li>
