@@ -6,7 +6,7 @@ function viewcart($del){
                 $i=0;
                 if($del==1){
                   $xoasp_th='<th>Action</th>';
-                  $xoasp_td='<td><a href="index.php?act=delcart&idcart='.$i.'"><i title="Remove Item From Cart"  class="fa fa-trash cart-remove-item" ></i></a></td>';    
+                
                   $xoasp_td2='<td></td>' ;
               }else{
                   $xoasp_th='';

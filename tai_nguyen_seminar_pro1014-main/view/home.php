@@ -1537,7 +1537,6 @@
                                 <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
                               </form>
                             </li>
-
                                 <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
                                 <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
                               </ul>
