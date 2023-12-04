@@ -70,7 +70,6 @@
                 <th>TÊN SẢN PHẨM</th>
                 <th>Giá</th>
                 <th>Hình</th>
-                <th>Số lượng</th>
                 <th>Lượt xem</th>
                 <th></th>
             </tr>
