@@ -101,19 +101,19 @@
                           <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                           <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
-                          <ul>
-                            <li class="pro-cart-icon">
-                            <form action="index.php?act=addtocart" method="post">
-                            <input type="hidden" name="id" value="'.$id.'">
-                            <input type="hidden" name="name" value="'.$name.'">
-                            <input type="hidden" name="img" value="'.$img.'">
-                            <input type="hidden" name="price" value="'.$price.'">
-                              <button title="Add to Cart" name="addtocart" ></button>
-                            </form>
-                            </li>
+                            <ul>
+                              <li class="pro-cart-icon">
+                                <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="'.$id.'">
+                                <input type="hidden" name="name" value="'.$name.'">
+                                <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="price" value="'.$price.'">
+                                <button title="Add to Cart" name="addtocart"></button>
+                                </form>
+                              </li>
                               <li class="pro-wishlist-icon"><a href="#"></a></li>
                               <li class="pro-compare-icon"><a href="#"></a></li>
-                          </ul>
+                            </ul>
                           </div>
                           <div class="rating-summary-block right-side">
                             <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
@@ -121,19 +121,22 @@
                         </div>
                           </div>
                           <div class="product-item-details">
-                            <div class="product-item-name"> <a href="'.$linksp.'">'.$name.'</a> </div>
+                            <div class="product-item-name"> <a href="product-page.html">'.$name.'</a> </div>
                             <div class="price-box"> <span class="price">'.$price.'</span> </div>
+                          
                           </div>
                         </div> 
                         <li class="pro-cart-icon">
-                                   <form action="index.php?act=addtocart" method="post">
-                                      <input type="hidden" name="id" value="'.$id.'">
-                                      <input type="hidden" name="name" value="'.$name.'">
-                                      <input type="hidden" name="img" value="'.$img.'">
-                                      <input type="hidden" name="price" value="'.$price.'"> 
-                                     <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
-                                   </form>
-                                 </li>
+                        <form action="index.php?act=addtocart" method="post">
+                          <input type="hidden" name="id" value="'.$id.'">
+                          <input type="hidden" name="name" value="'.$name.'">
+                          <input type="hidden" name="img" value="'.$img.'">
+                          <input type="hidden" name="price" value="'.$price.'">
+                          <input type="hidden" name="mota" value="'.$mota.'">
+                          <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                          
+                        </form>
+                      </li>
                       </div>';
                          $i+=1;
                         
@@ -1489,11 +1492,13 @@
                                <ul>
                                <li class="pro-cart-icon">
                                <form action="index.php?act=addtocart" method="post">
-                                  <input type="hidden" name="id" value="'.$id.'">
-                                  <input type="hidden" name="name" value="'.$name.'">
-                                  <input type="hidden" name="img" value="'.$img.'">
-                                  <input type="hidden" name="price" value="'.$price.'"> 
-                                 <button title="Add to Cart"  name="addtocart" class="btn-black"><span></span>Add to Cart</button>
+                                 <input type="hidden" name="id" value="'.$id.'">
+                                 <input type="hidden" name="name" value="'.$name.'">
+                                 <input type="hidden" name="img" value="'.$img.'">
+                                 <input type="hidden" name="price" value="'.$price.'">
+                                 <input type="hidden" name="price" value="'.$mota.'">
+                                 <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                                 
                                </form>
                              </li>
                                  <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
@@ -1530,11 +1535,13 @@
                               <ul>
                               <li class="pro-cart-icon">
                               <form action="index.php?act=addtocart" method="post">
-                                 <input type="hidden" name="id" value="'.$id.'">
-                                 <input type="hidden" name="name" value="'.$name.'">
-                                 <input type="hidden" name="img" value="'.$img.'">
-                                 <input type="hidden" name="price" value="'.$price.'"> 
-                                <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
+                                <input type="hidden" name="id" value="'.$id.'">
+                                <input type="hidden" name="name" value="'.$name.'">
+                                <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="price" value="'.$price.'">
+                                <input type="hidden" name="mota" value="'.$mota.'">
+                                <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                                
                               </form>
                             </li>
                                 <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
