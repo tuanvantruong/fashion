@@ -184,6 +184,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/cart/viewcart.php";
             break;
             case "bill":
+                
                 include "view/cart/bill.php";
                 break;
         case "gioithieu":
