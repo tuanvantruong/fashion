@@ -39,6 +39,13 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="fashionshop1"
+  agent-id="cc8d03b0-72b4-447b-96b5-014cfb489f81"
+  language-code="vi"
+></df-messenger>
 </head>
 <body>
 <div class="se-pre-con"></div>
