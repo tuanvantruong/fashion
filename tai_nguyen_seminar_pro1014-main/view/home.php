@@ -4,18 +4,18 @@
       <div class="item"> <img src="images/banner1.jpg" alt="Honour">
         <div class="banner-detail">
           <div class="container">
-            <div class="banner-detail-inner"> <span class="slogan">Hurry up !......  Hurry up !......  Hurry up !......</span>
-              <h1 class="banner-title">The Biggest Fashion Sale</h1>
-              <span class="offer">Upto 60% Off + Extra 32% Off</span> </div>
+            <div class="banner-detail-inner"> <span class="slogan">Nhanh tay !......  Nhanh tay !......  Nhanh tay !......</span>
+              <h1 class="banner-title">Chương trình giảm giá cực lớn</h1>
+              <span class="offer">Giảm tới 60% + Nhận thêm 30%</span> </div>
           </div>
         </div>
       </div>
       <div class="item"> <img src="images/banner2.jpg" alt="Honour">
         <div class="banner-detail">
           <div class="container">
-            <div class="banner-detail-inner"> <span class="slogan">Hurry up !......  Hurry up !......  Hurry up !......</span>
-              <h1 class="banner-title">Get Exciting Cash back & Discounts</h1>
-              <span class="offer">End of Season Sale - Get Best Offers</span> </div>
+            <div class="banner-detail-inner"> <span class="slogan">Nhanh tay !......  Nhanh tay !......  Nhanh tay !......</span>
+              <h1 class="banner-title">Chương trình giảm giá cực lớn</h1>
+              <span class="offer">Giảm giá cuối mùa - Nhận ưu đãi tốt nhất</span> </div>
           </div>
         </div>
       </div>
@@ -30,26 +30,26 @@
           <div class="col-sm-6 plr-20">
             <div class="sub-banner sub-banner1"> <a> <img src="images/sub-banner1.jpg" alt="Honour">
               <div class="sub-banner-detail">
-                <div class="sub-banner-type">Winter</div>
-                <div class="sub-banner-title">Clothes</div>
+                <div class="sub-banner-type">Trang Phục</div>
+                <div class="sub-banner-title">Mùa đông</div>
                 <span></span>
-                <div class="sub-banner-subtitle">Get Extra 20% Off</div>
+                <div class="sub-banner-subtitle">Giảm giá tới 20%</div>
               </div>
               </a> </div>
           </div>
           <div class="col-sm-6 plr-20">
             <div class="sub-banner sub-banner2"> <a> <img src="images/sub-banner2.jpg" alt="Honour">
               <div class="sub-banner-detail">
-                <div class="sub-banner-type">Men's</div>
-                <div class="sub-banner-title">Apparel</div>
+                <div class="sub-banner-type">Trang phục</div>
+                <div class="sub-banner-title">Nam</div>
                 <span></span>
-                <div class="sub-banner-subtitle">Buy Men's Clothing Online</div>
+                <div class="sub-banner-subtitle">Mua quần áo nam trực tuyến</div>
               </div>
               </a> </div>
             <div class="sub-banner sub-banner3"> <a> <img src="images/sub-banner3.jpg" alt="Honour">
               <div class="sub-banner-detail">
-                <div class="sub-banner-title">Luxury Essentials</div>
-                <div class="sub-banner-type">SALE with up to 50% off </div>
+                <div class="sub-banner-title">Đồ thiết yếu sang trọng</div>
+                <div class="sub-banner-type">Giảm giá lên tới 50%</div>
               </div>
               </a> </div>
           </div>
@@ -65,7 +65,7 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="heading-part align-center mb-40">
-              <h2 class="main_title">Featured Products</h2>
+              <h2 class="main_title">Sản phẩm nổi bật</h2>
               <div class="category-bar mb-20">
                 <ul class="tab-stap">
                   <!-- <li id="step1" class="active"><a href="javascript:void(0)">Dresses</a>•</li>
@@ -1438,20 +1438,20 @@
         <div class="row">
           <div class="col-md-4">
             <div class="feature-box feature1">
-              <div class="ser-title">Free Shipping</div>
-              <div class="ser-subtitle">world for order over $99</div>
+              <div class="ser-title">Miễn phí giao hàng</div>
+              <div class="ser-subtitle">Cho mọi đơn hàng từ 500k</div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="feature-box feature2">
-              <div class="ser-title">Special Gift</div>
-              <div class="ser-subtitle">Give the perfect gift to you</div>
+              <div class="ser-title">Quà đặc biệt</div>
+              <div class="ser-subtitle">Tặng món quà đặc biệt cho bạn</div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="feature-box feature3">
-              <div class="ser-title">Money Back</div>
-              <div class="ser-subtitle">Money Back Insurance plan</div>
+              <div class="ser-title">Hoàn tiền</div>
+              <div class="ser-subtitle">Bảo hiểm hoàn tiền</div>
             </div>
           </div>
         </div>
@@ -1465,7 +1465,7 @@
       <div class="row">
         <div class="col-md-8 pb-sm-30">
           <div class="heading-part mb-40">
-            <h2 class="main_title">Offer of the Fashion Week</h2>
+            <h2 class="main_title">Ưu đãi giảm giá tuần</h2>
           </div>
           <div id="special-pro" class="owl-carousel">
                <?php
@@ -1625,12 +1625,12 @@
         <div class="col-md-4">
           <div class="newsletter">
             <div class="newsletter-inner"> <img src="images/newsletter-icon.png" alt="Honour">
-              <h2 class="main_title">Subscribe Emails</h2>
-              <span>Get Latest News & Update</span>
-              <p>also the leap into electronic typesetting, remaining essentially</p>
+              <h2 class="main_title">Đăng kí nhận ưu đãi</h2>
+              <span>Nhận ưu đãi mới nhất và cập nhật tin tức</span>
+              <p>Mã giảm giá và tin tức thời trang</p>
               <form>
-                <input type="email" placeholder="Email Here...">
-                <button class="btn-black" title="Subscribe">Subscribe</button>
+                <input type="email" placeholder="Nhập email tại đây">
+                <button class="btn-black" title="Subscribe">Đăng kí</button>
               </form>
             </div>
           </div>
@@ -1642,29 +1642,29 @@
     <div class="container">
       <div class="client-inner">
         <div class="heading-part mb-40">
-          <h2 class="main_title">What Our Clients Say</h2>
+          <h2 class="main_title">Khách hàng của chúng tôi nói gì</h2>
         </div>
         <div id="client" class="owl-carousel">
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
           <div class="item client-detail">
             <div class="rating-summary-block big">
               <div class="rating-result" title="60%"> <span style="width:60%"></span> </div>
             </div>
-            <h4 class="sub-title client-title">Wed Censtoriya</h4>
-            <p>make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was make a type specimen book. It has survived not only five centuries.</p>
+            <h4 class="sub-title client-title">Anh Hoàng doanh nhân</h4>
+            <p>Nó đã tồn tại không chỉ sau 5 thế kỷ mà còn là bước nhảy vọt trong lĩnh vực sắp chữ điện tử, về cơ bản vẫn không thay đổi. </p>
           </div>
         </div>
       </div>
@@ -1675,7 +1675,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="heading-part align-center mb-40">
-            <h2 class="main_title">Latest News</h2>
+            <h2 class="main_title">Tin tức mới nhất</h2>
           </div>
         </div>
       </div>
@@ -1683,12 +1683,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img1.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>01 jan 2017</span>
+            <div class="blog-detail"> <span>01 jan 2027</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1698,12 +1698,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img2.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>02 jan 2017</span>
+            <div class="blog-detail"> <span>02 jan 2027</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1713,12 +1713,12 @@
         <div class="col-sm-4">
           <div class="blog-item">
             <div class="blog-media"> <img src="images/blog_img3.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
-            <div class="blog-detail"> <span>03 jan 2017</span>
+            <div class="blog-detail"> <span>03 jan 2025</span>
               <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
               <hr>
               <div class="post-info">
                 <ul>
-                  <li><span>By</span><a href="#"> cormon jons</a></li>
+                  <li><span>By</span><a href="#"> VH</a></li>
                   <li><a href="#">(5) comments</a></li>
                 </ul>
               </div>
@@ -1735,7 +1735,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="heading-part align-center mb-40">
-            <h2 class="main_title">Top Brand</h2>
+            <h2 class="main_title">Các thương hiệu</h2>
           </div>
         </div>
       </div>
