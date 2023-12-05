@@ -69,7 +69,7 @@
                       </div>
                       <?php
                        if(isset($_SESSION['user'])){
-                        $name=$_SESSION['user']['name'];
+                        $name=$_SESSION['user']['user'];
                         $address=$_SESSION['user']['address'];
                         $email=$_SESSION['user']['email'];
                         $tel=$_SESSION['user']['tel'];
@@ -82,7 +82,7 @@
                       ?>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Full Name" value="<?=$name?>" name="name" >
+                          <input type="text" required placeholder="Full Name" value="<?=$name?>" name="user" >
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -133,7 +133,7 @@
                           <label for="chk-billing-address">Use my delivery address as my billing address</label>
                         </div>
                       </div>
-                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side">Next</a> </div>
+                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side" name="dongydathang">Next</a> </div>
               </table>
             </div>
           </div>

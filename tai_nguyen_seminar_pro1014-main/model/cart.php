@@ -89,7 +89,7 @@ function viewcart($del){
                                </tr>
                                <tr>
                                  <td>Shipping</td>
-                                 <td><div class="price-box"> <span class="price">$0.00</span> </div></td>
+                                 <td><div class="price-box"> <span class="price">0.00</span> </div></td>
                                </tr>
                                <tr>
                                  <td><b>Amount Payable</b></td>
@@ -104,5 +104,27 @@ function viewcart($del){
                      </div>
                    </div>
                  </div>';
+}
+
+
+function tongdonhang(){
+ 
+  
+  $tong=0;
+              
+             
+              foreach($_SESSION['mycart'] as $cart){
+                  
+                  $ttien=$cart[3] * $cart[4];
+                  $tong+=$ttien;
+                  
+                  
+              }
+                return $tong;
+}
+
+function insert_bill($name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang){
+  $sql="insert into bill(bill_name,bill_email,bill_address,bill_tel,bill_pttt,ngaydathang,total) values('$name','$email','$address','$tel','$pttt','$ngaydathang','$tongdonhang')";
+  return pdo_execute_return_lastInsertId($sql);
 }
 ?>

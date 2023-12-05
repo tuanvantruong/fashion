@@ -187,6 +187,22 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 
                 include "view/cart/bill.php";
                 break;
+
+                case "billcomfirm":
+
+                     if(isset($_POST['dongydathang'])&&($_POST['dongydathang'])){
+                        $name=$_POST['user'];
+                        $email=$_POST['email'];
+                        $address=$_POST['address'];
+                        $tel=$_POST['tel'];
+                        $ptt=$_POST['pttt'];
+                        $tongdonhang=tongdonhang();
+
+                        $idbill=insert_bill($name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang);
+
+                     }
+                    include "view/billcomfirm.php";
+                    break;   
         case "gioithieu":
             include "view/gioithieu.php";
             break;
