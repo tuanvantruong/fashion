@@ -134,9 +134,13 @@
                            </div>
                            <hr>
                            <p class="mt-20">Quisque id fermentum tellus. Donec fringilla mauris nec ligula maximus sodales. Donec ac felis nunc. Fusce placerat volutpat risus, ac fermentum ex tempus eget.</p>
+                           
                          </div>
-                         <div class="right-side float-none-xs"> <a class="btn btn-black" href="index.php"><span><i class="fa fa-angle-left"></i></span>Continue Shopping</a> </div>
+                        
+                         <div class="right-side float-none-xs"> <a class="btn btn-black" href="index.php?act=muahangthanhcong">Next<span><i class="fa fa-angle-right"></i></span></a> </div>
+                         
                        </div>
+                       
                        <div class="col-sm-4">
                          <div class="cart-total-table address-box commun-table mb-30">
                            <div class="table-responsive">

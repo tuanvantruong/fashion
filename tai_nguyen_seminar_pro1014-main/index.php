@@ -121,7 +121,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     header('Location: index.php?act=dangnhap');
                     // $thongbao="bạn đã đăng nhập thành công ";
                 } else {
-                    $thongbao = "tài khoản không tồn tại. Vui lòng đăng ký";
+                    $thongbao = "Tài khoản không tồn tại. Vui lòng đăng ký";
                 }
             }
             include "view/taikhoan/dangnhap.php";
@@ -188,6 +188,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 break;
         case "gioithieu":
             include "view/gioithieu.php";
+            break;
+        case "muahangthanhcong":
+            include "view/muahangthanhcong.php";
             break;
         case "lienhe":
             include "view/lienhe.php";
