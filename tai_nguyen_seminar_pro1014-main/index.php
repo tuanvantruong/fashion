@@ -43,7 +43,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     $kyw = "";
                 }
                 if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                    $iddm = $_GET['iddm'];
+                    $iddm = $_GET['iddm'];  
                 } else {
                     $iddm =0;
                 }

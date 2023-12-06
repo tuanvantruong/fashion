@@ -4,6 +4,6 @@ function loadall_thongke(){
     $sql.=" group by danhmuc.id order by danhmuc.id desc";
     $listtk=pdo_query($sql);
     return $listtk;
-
+    
 }
 ?>
