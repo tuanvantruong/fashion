@@ -42,7 +42,7 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
-  chat-title="fashionshop1"
+  chat-title="Honour"
   agent-id="cc8d03b0-72b4-447b-96b5-014cfb489f81"
   language-code="vi"
 ></df-messenger>
