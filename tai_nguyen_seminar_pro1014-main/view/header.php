@@ -56,12 +56,12 @@
         <div class="col-sm-6"></div>
         <div class="col-sm-6 col-xs-12">
           <div class="newsletter-inner"> <img src="images/newsletter-icon.png" alt="Honour">
-            <h2 class="main_title">Subscribe Emails</h2>
-            <span>Get Latest News & Update</span>
-            <p>also the leap into electronic typesetting, remaining essentially</p>
+            <h2 class="main_title">Đăng ký email</h2>
+            <span>Nhận tin tức và cập nhật mới nhất</span>
+            <p>Là bước nhảy vọt vào lĩnh vực sắp chữ điện tử, về cơ bản vẫn còn</p>
             <form>
               <input type="email" placeholder="Email Here...">
-              <button class="btn-black" title="Subscribe">Subscribe</button>
+              <button class="btn-black" title="Subscribe">Đăng kí</button>
             </form>
           </div>
         </div>
@@ -117,7 +117,7 @@
                        </li> ';             
                       }
                      ?>  
-              <!-- <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a> -->
+              <!-- <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a> --> 
                 <!-- <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">
                     <ul class="sub-menu-level1">
@@ -206,21 +206,21 @@
                     </ul>
                   </div>
                 </div>
-              </li> -->
+              </li>
               <!-- <li class="level"><a href="shop.html" class="page-scroll">Baby</a></li> -->
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Pages</a>
+              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Trang</a>
                 <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">
                     <ul class="sub-menu-level1">
                       <li class="level2">
                         <ul class="sub-menu-level2 ">
-                          <li class="level3"><a href="about.html"><span>■</span>About Us</a></li>
-                          <li class="level3"><a href="account.html"><span>■</span>Account</a></li>
-                          <li class="level3"><a href="checkout.html"><span>■</span>Checkout</a></li>
-                          <li class="level3"><a href="contact.html"><span>■</span>Contact</a></li>
-                          <li class="level3"><a href="404.html"><span>■</span>404 Error</a></li>
-                          <li class="level3"><a href="blog.html"><span>■</span>Blog</a></li>
-                          <li class="level3"><a href="single-blog.html"><span>■</span>Single Blog</a></li>
+                          <li class="level3"><a href="about.html"><span>■</span>Về chúng tôi</a></li>
+                          <li class="level3"><a href="account.html"><span>■</span>Tài khoản</a></li>
+                          <li class="level3"><a href="checkout.html"><span>■</span>Thanh toán</a></li>
+                          <li class="level3"><a href="contact.html"><span>■</span>Liên hệ</a></li>
+                          <!-- <li class="level3"><a href="404.html"><span>■</span>404 Error</a></li> -->
+                          <li class="level3"><a href="blog.html"><span>■</span>Bài viết</a></li>
+                          <li class="level3"><a href="single-blog.html"><span>■</span>Bài viết đơn</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -244,26 +244,14 @@
               <li class="account-icon"> <a href="#"><span></span></a>
                 <div class="header-link-dropdown account-link-dropdown">
                   <ul class="link-dropdown-list">
-                    <li> <span class="dropdown-title">Default welcome msg!</span>
+                    <li> <span class="dropdown-title">Kính chào quý khách!</span>
                       <ul>
-                        <li><a href="index.php?act=dangnhap">Sign In</a></li>
-                        <li><a href="index.php?act=dangky">Create an Account</a></li>
+                        <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
+                        <li><a href="index.php?act=dangky">Tạo một tài khoản</a></li>
                       </ul>
                     </li>
-                    <li> <span class="dropdown-title">Language :</span>
-                      <ul>
-                        <li><a class="active" href="#">English</a></li>
-                        <li><a href="#">French</a></li>
-                        <li><a href="#">German</a></li>
-                      </ul>
-                    </li>
-                    <li> <span class="dropdown-title">Currency :</span>
-                      <ul>
-                        <li><a class="active" href="#">USD</a></li>
-                        <li><a href="#">AUD</a></li>
-                        <li><a href="#">EUR</a></li>
-                      </ul>
-                    </li>
+                    
+                    
                   </ul>
                 </div>
               </li>
@@ -271,11 +259,11 @@
                 <div class="cart-dropdown header-link-dropdown">
                   <ul class="cart-list link-dropdown-list">
                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                      <div class="media"> <a class="pull-left"> <img alt="Minimo" src="images/1.jpg"></a>
-                        <div class="media-body"> <span><a>Black African Print Skirt</a></span>
-                          <p class="cart-price">$14.99</p>
+                      <div class="media"> <a class="pull-left"> <img alt="" src=""></a>
+                        <div class="media-body"> <span><a></a></span>
+                          <p class="cart-price"></p>
                           <div class="product-qty">
-                            <label>Qty:</label>
+                            <label></label>
                             <div class="custom-qty">
                               <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty">
                             </div>
@@ -284,11 +272,11 @@
                       </div>
                     </li>
                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                      <div class="media"> <a class="pull-left"> <img alt="Minimo" src="images/2.jpg"></a>
-                        <div class="media-body"> <span><a>Black African Print Skirt</a></span>
-                          <p class="cart-price">$14.99</p>
+                      <div class="media"> <a class="pull-left"> <img alt="" src=""></a>
+                        <div class="media-body"> <span><a></a></span>
+                          <p class="cart-price"></p>
                           <div class="product-qty">
-                            <label>Qty:</label>
+                            <label></label>
                             <div class="custom-qty">
                               <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty">
                             </div>
@@ -297,9 +285,9 @@
                       </div>
                     </li>
                   </ul>
-                  <p class="cart-sub-totle"> <span class="pull-left">Cart Subtotal</span> <span class="pull-right"><strong class="price-box">$29.98</strong></span> </p>
+                  <p class="cart-sub-totle"> <span class="pull-left">Tổng tiền giỏ hàng</span> <span class="pull-right"><strong class="price-box"></strong></span> </p>
                   <div class="clearfix"></div>
-                  <div class="mt-20"> <a href="index.php?act=addtocart" class="btn-color btn">Cart</a> <a href="index.php?act=bill" class="btn-color btn right-side">Checkout</a> </div>
+                  <div class="mt-20"> <a href="index.php?act=addtocart" class="btn-color btn">Giỏ</a> <a href="index.php?act=bill" class="btn-color btn right-side">Thủ tục thanh toán</a> </div>
                 </div>
               </li>
             </ul>

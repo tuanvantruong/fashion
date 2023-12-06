@@ -5,7 +5,7 @@
         <h1 class="banner-title">Women</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Home</a>/</li>
+            <li><a href="index.php">Trang chủ</a>/</li>
             <li><span>Women</span></li>
           </ul>
         </div>
@@ -23,7 +23,7 @@
           <div class="sidebar-block">
             <div class="sidebar-box listing-box mb-40"> <span class="opener plus"></span>
               <div class="sidebar-title">
-                <h3>Categories</h3>
+                <h3>Danh mục</h3>
               </div>
               <div class="sidebar-contant">
                 <ul>
@@ -38,16 +38,16 @@
             </div>
             <div class="sidebar-box gray-box mb-40"> <span class="opener plus"></span>
               <div class="sidebar-title">
-                <h3>Shop by</h3>
+                <h3>Sắp xếp theo</h3>
               </div>
               <div class="sidebar-contant">
                 <div class="price-range mb-30">
-                  <div class="inner-title">Price range</div>
+                  <div class="inner-title">Khoảng giá</div>
                   <input class="price-txt" type="text" id="amount">
                   <div id="slider-range"></div>
                 </div>
                 <div class="mb-20">
-                  <div class="inner-title">Category</div>
+                  <div class="inner-title">Danh mục</div>
                   <ul>
                     <li><a>Bags 2 <span>(0)</span></a></li>
                     <li><a>Clothing x2 2 <span>(05)</span></a></li>
@@ -70,12 +70,12 @@
                     <li><a>Ipsum sit <span>(10)</span></a></li>
                   </ul>
                 </div>
-                <a href="#" class="btn btn-color">Refine</a> </div>
+                <a href="#" class="btn btn-color">Lọc</a> </div>
             </div>
             <div class="sidebar-box mb-40 visible-sm visible-md visible-lg"> <a href="#"> <img src="images/left-banner.jpg" alt="Honour"> </a> </div>
             <div class="sidebar-box sidebar-item"> <span class="opener plus"></span>
               <div class="sidebar-title">
-                <h3>Best Seller</h3>
+                <h3>Sản phẩm bán chạy</h3>
               </div>
               <div class="sidebar-contant">
                 <ul>

@@ -2,11 +2,11 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Shopping Cart</h1>
+        <h1 class="banner-title">Giỏ hàng</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Home</a>/</li>
-            <li><span>Shopping Cart</span></li>
+            <li><a href="index.php">Trang chủ</a>/</li>
+            <li><span>Giỏ hàng</span></li>
           </ul>
         </div>
       </section>
@@ -63,7 +63,7 @@
       <div class="mt-30">
         <div class="row">
           <div class="col-xs-12">
-            <div class="right-side float-none-xs"> <a href="index.php?act=bill" class="btn btn-black">Proceed to checkout<span><i class="fa fa-angle-right"></i></span></a> </div>
+            <div class="right-side float-none-xs"> <a href="index.php?act=bill" class="btn btn-black">Tiến hành thanh toán<span><i class="fa fa-angle-right"></i></span></a> </div>
           </div>
         </div>
       </div>
