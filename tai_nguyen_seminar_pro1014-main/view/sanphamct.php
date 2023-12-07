@@ -71,7 +71,15 @@
                     <div class="product-qty">
                       <label for="qty">Qty:</label>
                       <div class="custom-qty">
-                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp; &amp; qty &gt; 1 ) result.value--;return false;" class="reduced items" type="button"> <i class="fa fa-minus"></i> </button>
+                      <button onclick="var result = document.getElementById('qty'); 
+                var qty = result.value; 
+                if (!isNaN(qty) && qty > 1) 
+                    result.value--;
+                return false;" 
+        class="reduced items" 
+        type="button">
+    <i class="fa fa-minus"></i>
+</button>
                         <input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty">
                         <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> <i class="fa fa-plus"></i> </button>
                       </div>
