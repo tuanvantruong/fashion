@@ -21,7 +21,7 @@
         <?php
                  
                  extract($onesp);
-                 $img=$img_path.$img;
+                 $hinh=$img_path.$img;
 
         ?>
 
@@ -29,7 +29,7 @@
       <div class="row">
 
         <div class="col-md-5 col-sm-5 mb-xs-30">
-          <div class="fotorama" data-nav="thumbs" data-allowfullscreen="native"> <a href="#"><img src="<?=$img?>" alt="Honour"></a> <a href="#"><img src="images/2.jpg" alt="Honour"></a> <a href="#"><img src="images/3.jpg" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> </div>
+          <div class="fotorama" data-nav="thumbs" data-allowfullscreen="native"> <a href="#"><img src="<?=$hinh?>" alt="Honour"></a> <a href="#"><img src="images/2.jpg" alt="Honour"></a> <a href="#"><img src="images/3.jpg" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> </div>
         </div>
         <div class="col-md-7 col-sm-7">
           <div class="row">
@@ -71,7 +71,15 @@
                     <div class="product-qty">
                       <label for="qty">Qty:</label>
                       <div class="custom-qty">
-                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp; &amp; qty &gt; 1 ) result.value--;return false;" class="reduced items" type="button"> <i class="fa fa-minus"></i> </button>
+                      <button onclick="var result = document.getElementById('qty'); 
+                var qty = result.value; 
+                if (!isNaN(qty) && qty > 1) 
+                    result.value--;
+                return false;" 
+        class="reduced items" 
+        type="button">
+    <i class="fa fa-minus"></i>
+</button>
                         <input type="text" class="input-text qty" title="Qty" value="1" maxlength="8" id="qty" name="qty">
                         <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> <i class="fa fa-plus"></i> </button>
                       </div>
@@ -79,6 +87,7 @@
                     
                       <div class="bottom-detail cart-button">
                       <ul>
+<<<<<<< HEAD
                       <li class="pro-cart-icon">
                                <form action="index.php?act=addtocart" method="post">
                                  <input type="hidden" name="id" >
@@ -90,6 +99,19 @@
                                  
                                </form>
                              </li>
+=======
+                        <li class="pro-cart-icon">
+                          
+                          <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="<?=$id?>">
+                                <input type="hidden" name="name" value="<?=$name?>">
+                                <input type="hidden" name="img" value="<?=$img?>">
+                                <input type="hidden" name="price" value="<?=$price?>">
+                                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                                </form>
+                         
+                        </li>
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                       </ul>
                     </div>
                    
@@ -258,17 +280,18 @@
             <?php
                  foreach ($sp_cung_loai as $spcl) {
                     extract($spcl);
-                    $img=$img_path.$img;
+                    $hinh=$img_path.$img;
                     $linksp="index.php?act=sanphamct&idsp=".$id;
                     echo '<div class="item">
                     <div class="product-item">
                      
-                      <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$img.'" alt=""> </a>
+                      <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                         <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
-                            <ul>
-                            <li class="pro-cart-icon">
+                          <ul>
+                          <li class="pro-cart-icon">
                             <form action="index.php?act=addtocart" method="post">
+<<<<<<< HEAD
                               <input type="hidden" name="id" value="'.$id.'">
                               <input type="hidden" name="name" value="'.$name.'">
                               <input type="hidden" name="img" value="'.$img.'">
@@ -276,11 +299,18 @@
                               <input type="hidden" name="price" value="'.$mota.'">
                               <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
                               
+=======
+                            <input type="hidden" name="id" value="'.$id.'">
+                            <input type="hidden" name="name" value="'.$name.'">
+                            <input type="hidden" name="img" value="'.$img.'">
+                            <input type="hidden" name="price" value="'.$price.'">
+                            <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                             </form>
                           </li>
-                              <li class="pro-wishlist-icon"><a href="#"></a></li>
-                              <li class="pro-compare-icon"><a href="#"></a></li>
-                            </ul>
+                          <li class="pro-wishlist-icon"><a href="#"></a></li>
+                          <li class="pro-compare-icon"><a href="#"></a></li>
+                        </ul>
                           </div>
                           <div class="rating-summary-block right-side">
                             <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>

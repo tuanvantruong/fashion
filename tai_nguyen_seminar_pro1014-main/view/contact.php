@@ -2,11 +2,11 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Contact Us</h1>
+        <h1 class="banner-title">Liên hệ với chúng tôi</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><span>Contact</span></li>
+            <li><a href="index.html">Trang chủ</a>/</li>
+            <li><span>Liên hệ</span></li>
           </ul>
         </div>
       </section>

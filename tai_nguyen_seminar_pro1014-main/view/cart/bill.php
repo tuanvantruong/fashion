@@ -4,12 +4,12 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Checkout</h1>
+        <h1 class="banner-title">Thủ tục thanh toán</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Home</a>/</li>
-            <li><a href="index.php?act=addtocart">Cart</a>/</li>
-            <li><span>Checkout</span></li>
+            <li><a href="index.php">Trang chủ</a>/</li>
+            <li><a href="index.php?act=addtocart">Giỏ hàng</a>/</li>
+            <li><span>Thủ tục thanh toán</span></li>
           </ul>
         </div>
       </section>
@@ -27,19 +27,19 @@
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
-                <span>Shipping</span> </a> </li>
+                <span>Thông tin giao hàng</span> </a> </li>
               <li> <a href="index.php?act=payment">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
-                <span>Payment</span> </a> </li>
+                <span>PHương thức thanh toán</span> </a> </li>
               <li> <a href="index.php?act=order-complete">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">3</div>
                 </div>
-                <span>Order Complete</span> </a> </li>
+                <span>Thanh toán thành công</span> </a> </li>
               <li>
                 <div class="step">
                   <div class="line"></div>
@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part align-center">
-                  <h2 class="heading">Please fill up your Shipping details</h2>
+                  <h2 class="heading">Vui lòng điền chi tiết vận chuyển của bạn</h2>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@
                     <div class="row">
                       <div class="col-xs-12 mb-20">
                         <div class="heading-part">
-                          <h3 class="sub-heading">Shipping Address</h3>
+                          <h3 class="sub-heading">Địa chỉ giao hàng</h3>
                         </div>
                         <hr>
                       </div>
@@ -82,28 +82,28 @@
                       ?>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Full Name" value="<?=$name?>" name="user" >
+                          <input type="text" required placeholder="Họ tên đầy đủ" value="<?=$name?>" name="user" >
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="email" required placeholder="Email Address" value="<?=$email?>" name="email">
+                          <input type="email" required placeholder="Địa chỉ email" value="<?=$email?>" name="email">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Company">
+                          <input type="text" required placeholder="Công ty">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Contact Number"value="<?=$tel?>" name="tel">
+                          <input type="text" required placeholder="Số điện thoại"value="<?=$tel?>" name="tel">
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="input-box">
-                          <input type="text" required placeholder="Shipping Address" value="<?=$address?>" name="address">
-                          <span>Please provide the number and street.</span> </div>
+                          <input type="text" required placeholder="Địa chỉ giao hàng" value="<?=$address?>" name="address">
+                          <span>Vui lòng cung cấp số nhà và đường phố.</span> </div>
                       </div>
                 
                     </div>
@@ -130,10 +130,10 @@
                         <div class="check-box"> <span>
                           <input type="checkbox" class="checkbox" id="chk-billing-address" name="chk-billing-address">
                           </span>
-                          <label for="chk-billing-address">Use my delivery address as my billing address</label>
+                          <label for="chk-billing-address">Sử dụng địa chỉ giao hàng của tôi làm địa chỉ thanh toán.</label>
                         </div>
                       </div>
-                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side" name="dongydathang">Next</a> </div>
+                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side" name="dongydathang">Tiếp theo</a> </div>
               </table>
             </div>
           </div>

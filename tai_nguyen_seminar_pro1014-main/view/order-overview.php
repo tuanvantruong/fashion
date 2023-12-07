@@ -2,12 +2,12 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Checkout</h1>
+        <h1 class="banner-title">Thủ tục thanh toán</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><a href="cart.html">Cart</a>/</li>
-            <li><span>Checkout</span></li>
+            <li><a href="index.html">Trang chủ</a>/</li>
+            <li><a href="cart.html">Giỏ hàng</a>/</li>
+            <li><span>Thủ tục thanh toán</span></li>
           </ul>
         </div>
       </section>
@@ -27,25 +27,25 @@
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
-                <span>Shipping</span> </a> </li>
+                <span>Thông tin giao hàng</span> </a> </li>
               <li class="active"> <a href="order-overview.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
-                <span>Order Overview</span> </a> </li>
+                <span>Tổng quan đơn hàng</span> </a> </li>
               <li> <a href="payment.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">3</div>
                 </div>
-                <span>Payment</span> </a> </li>
+                <span>Phương thức thanh toán</span> </a> </li>
               <li> <a href="order-complete.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">4</div>
                 </div>
-                <span>Order Complete</span> </a> </li>
+                <span>Đặt hàng thành công</span> </a> </li>
               <li>
                 <div class="step">
                   <div class="line"></div>
@@ -58,7 +58,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part align-center">
-                  <h2 class="heading">Order Overview</h2>
+                  <h2 class="heading">Tổng quan đơn hàng</h2>
                 </div>
               </div>
             </div>
@@ -69,10 +69,10 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Product</th>
-                          <th>Product Detail</th>
-                          <th>Sub Total</th>
-                          <th>Action</th>
+                          <th>Sản phẩm</th>
+                          <th>Chi tiết sản phẩm</th>
+                          <th>Tổng thu</th>
+                          <th>Hành động</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -125,7 +125,7 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th colspan="2">Cart Total</th>
+                          <th colspan="2">Tổng tiền giỏ hàng</th>
                         </tr>
                       </thead>
                       <tbody>
