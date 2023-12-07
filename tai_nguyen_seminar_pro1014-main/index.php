@@ -151,6 +151,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             header('Location: index.php');
             // include "view/gioithieu.php";
             break;
+<<<<<<< HEAD
             case "addtocart":
                 if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                     $id = $_POST['id'];
@@ -182,6 +183,23 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 header('Location: index.php?act=viewcart');
                 break;
             case "delcart": 
+=======
+        case "addtocart":
+            if(isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                $id=$_POST['id'];
+                $name=$_POST['name'];
+                $img=$_POST['img'];
+                $price=$_POST['price'];
+                $soluong=1;
+                $ttien= $price * $soluong;
+                $spadd=[$id,$name,$img,$price,$soluong,$ttien];
+                array_push($_SESSION['mycart'],$spadd);              
+            }
+            include "view/cart/viewcart.php";
+            header('Location: index.php');
+            break;
+            case "delcart":
+>>>>>>> 94079ce6615179a117eaf226ccf6de93dc7eb842
                 if(isset($_GET['idcart'])){
                     array_slice($_SESSION['mycart'],$_GET['idcart'],1);
                 }else{

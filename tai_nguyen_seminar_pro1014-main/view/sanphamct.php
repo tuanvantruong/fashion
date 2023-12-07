@@ -1,6 +1,6 @@
-     <!-- END HEADER -->
+<!-- END HEADER -->
 
-     <div class="banner inner-banner align-center">
+<div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
         <h1 class="banner-title">Women</h1>
@@ -21,7 +21,7 @@
         <?php
                  
                  extract($onesp);
-                 $img=$img_path.$img;
+                 $hinh=$img_path.$img;
 
         ?>
 
@@ -29,7 +29,7 @@
       <div class="row">
 
         <div class="col-md-5 col-sm-5 mb-xs-30">
-          <div class="fotorama" data-nav="thumbs" data-allowfullscreen="native"> <a href="#"><img src="<?=$img?>" alt="Honour"></a> <a href="#"><img src="images/2.jpg" alt="Honour"></a> <a href="#"><img src="images/3.jpg" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> </div>
+          <div class="fotorama" data-nav="thumbs" data-allowfullscreen="native"> <a href="#"><img src="<?=$hinh?>" alt="Honour"></a> <a href="#"><img src="images/2.jpg" alt="Honour"></a> <a href="#"><img src="images/3.jpg" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> <a href="#"><img src="images/4.jpg" alt="Honour"></a> <a href="#"><img src="images/5.jpg" alt="Honour"></a> <a href="#"><img src="images/6.html" alt="Honour"></a> </div>
         </div>
         <div class="col-md-7 col-sm-7">
           <div class="row">
@@ -63,7 +63,7 @@
                     <select class="selectpicker form-control" id="select-by-color">
                       <option selected="selected" value="#">Blue</option>
                       <option value="#">Green</option>
-                      <option value="#">Orange</option>
+<option value="#">Orange</option>
                       <option value="#">White</option>
                     </select>
                   </div>
@@ -84,20 +84,42 @@
                         <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> <i class="fa fa-plus"></i> </button>
                       </div>
                     </div>
-                    <div class="bottom-detail cart-button">
+                    
+                      <div class="bottom-detail cart-button">
                       <ul>
+<<<<<<< HEAD
+                      <li class="pro-cart-icon">
+                               <form action="index.php?act=addtocart" method="post">
+                                 <input type="hidden" name="id" >
+                                 <input type="hidden" name="name" value="'.$name.'">
+                                 <input type="hidden" name="img" value="'.$img.'">
+                                 <input type="hidden" name="price" value="'.$price.'">
+                                 <input type="hidden" name="price" value="'.$mota.'">
+                                 <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                                 
+                               </form>
+                             </li>
+=======
                         <li class="pro-cart-icon">
-                          <form>
-                            <button title="Add to Cart" class="btn-black"><span></span>Add to Cart</button>
-                          </form>
+                          
+                          <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="<?=$id?>">
+                                <input type="hidden" name="name" value="<?=$name?>">
+                                <input type="hidden" name="img" value="<?=$img?>">
+                                <input type="hidden" name="price" value="<?=$price?>">
+                                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                                </form>
+                         
                         </li>
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                       </ul>
                     </div>
+                   
                   </div>
                   <div class="bottom-detail">
                     <ul>
                       <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
-                      <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
+<li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
                       <li class="pro-email-icon"><a href="#"><span></span>Email to Friends</a></li>
                     </ul>
                   </div>
@@ -140,7 +162,7 @@
                     <div class="items-Description selected gray-bg">
                       <div class="Description"> <strong>The standard Lorem Ipsum passage, used since the 1500s</strong><br />
                         <p>Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets</p>
-                        <p>Tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<p>Tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                       </div>
                     </div>
                   </li>
@@ -181,7 +203,7 @@
                               </li>
                               <li>
                                 <div class="comment-user"> <img src="images/comment-user.jpg" alt="Honour"> </div>
-                                <div class="comment-detail">
+<div class="comment-detail">
                                   <div class="user-name">John Doe</div>
                                   <div class="post-info">
                                     <ul>
@@ -245,7 +267,7 @@
     <div class="container">
       <div class="product-slider">
         <div class="row">
-          <div class="col-xs-12">
+<div class="col-xs-12">
             <div class="heading-part align-center mb-40">
               <h2 class="main_title">Related Products</h2>
             </div>
@@ -258,27 +280,37 @@
             <?php
                  foreach ($sp_cung_loai as $spcl) {
                     extract($spcl);
-                    $img=$img_path.$img;
+                    $hinh=$img_path.$img;
                     $linksp="index.php?act=sanphamct&idsp=".$id;
                     echo '<div class="item">
                     <div class="product-item">
                      
-                      <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$img.'" alt=""> </a>
+                      <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                         <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
-                            <ul>
-                            <li class="pro-cart-icon">
+                          <ul>
+                          <li class="pro-cart-icon">
                             <form action="index.php?act=addtocart" method="post">
+<<<<<<< HEAD
+                              <input type="hidden" name="id" value="'.$id.'">
+                              <input type="hidden" name="name" value="'.$name.'">
+                              <input type="hidden" name="img" value="'.$img.'">
+                              <input type="hidden" name="price" value="'.$price.'">
+                              <input type="hidden" name="price" value="'.$mota.'">
+                              <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                              
+=======
                             <input type="hidden" name="id" value="'.$id.'">
                             <input type="hidden" name="name" value="'.$name.'">
                             <input type="hidden" name="img" value="'.$img.'">
                             <input type="hidden" name="price" value="'.$price.'">
-                              <button title="Add to Cart" name="addtocart" ></button>
+                            <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                             </form>
                           </li>
-                              <li class="pro-wishlist-icon"><a href="#"></a></li>
-                              <li class="pro-compare-icon"><a href="#"></a></li>
-                            </ul>
+                          <li class="pro-wishlist-icon"><a href="#"></a></li>
+                          <li class="pro-compare-icon"><a href="#"></a></li>
+                        </ul>
                           </div>
                           <div class="rating-summary-block right-side">
                             <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
@@ -288,7 +320,7 @@
                       <div class="product-item-details">
                         <div class="product-item-name"> <a href="'.$linksp.'">'.$name.'</a> </div>
                         <div class="price-box"> <span class="price">'.$price.'</span> <del class="price old-price">$100.00</del> </div>
-                      </div>
+</div>
                     </div>
                   </div>';
                     
@@ -307,4 +339,4 @@
       </div>
     </div>
   </section>
-  <!-- CONTAINER END --> 
+  <!-- CONTAINER END -->

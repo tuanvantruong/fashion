@@ -101,14 +101,14 @@
                           <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a>
                           <div class="product-detail-inner">
                           <div class="detail-inner-left left-side">
-                            <ul>
+                          <ul>
                               <li class="pro-cart-icon">
                                 <form action="index.php?act=addtocart" method="post">
                                 <input type="hidden" name="id" value="'.$id.'">
                                 <input type="hidden" name="name" value="'.$name.'">
                                 <input type="hidden" name="img" value="'.$img.'">
                                 <input type="hidden" name="price" value="'.$price.'">
-                                <button title="Add to Cart" name="addtocart"></button>
+                                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
                                 </form>
                               </li>
                               <li class="pro-wishlist-icon"><a href="#"></a></li>
@@ -126,17 +126,7 @@
                           
                           </div>
                         </div> 
-                        <li class="pro-cart-icon">
-                        <form action="index.php?act=addtocart" method="post">
-                          <input type="hidden" name="id" value="'.$id.'">
-                          <input type="hidden" name="name" value="'.$name.'">
-                          <input type="hidden" name="img" value="'.$img.'">
-                          <input type="hidden" name="price" value="'.$price.'">
-                          <input type="hidden" name="mota" value="'.$mota.'">
-                          <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
-                          
-                        </form>
-                      </li>
+                        
                       </div>';
                          $i+=1;
                         
@@ -1472,12 +1462,12 @@
                      foreach ($dstop10 as $sp) {
                        extract($sp);
                        $linksp="index.php?act=sanphamct&idsp=".$id;
-                       $img=$img_path.$img;
+                       $hinh=$img_path.$img;
                        echo '<div class="item">              
                        <div class="special-products-block">
                          <div class="product-item">
                            
-                           <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$img.'" alt=""> </a> </div>
+                           <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a> </div>
                          </div>
                          <div class="pro-detail-main">
                            <div class="product-item-details">
@@ -1489,21 +1479,19 @@
                              <p>'.$mota.' </p>
                              <a href="#" class="more-link">Learn More</a>
                              <div class="bottom-detail">
-                               <ul>
-                               <li class="pro-cart-icon">
+                             <ul>
+                             <li class="pro-cart-icon">
                                <form action="index.php?act=addtocart" method="post">
-                                 <input type="hidden" name="id" value="'.$id.'">
-                                 <input type="hidden" name="name" value="'.$name.'">
-                                 <input type="hidden" name="img" value="'.$img.'">
-                                 <input type="hidden" name="price" value="'.$price.'">
-                                 <input type="hidden" name="price" value="'.$mota.'">
-                                 <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
-                                 
+                               <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="name" value="'.$name.'">
+                               <input type="hidden" name="img" value="'.$img.'">
+                               <input type="hidden" name="price" value="'.$price.'">
+                               <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
                                </form>
                              </li>
-                                 <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
-                                 <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
-                               </ul>
+                             <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
+                          <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>
+                           </ul>
                              </div>
                            </div>
                          </div>
@@ -1515,12 +1503,12 @@
                      foreach ($dstop02 as $sp02) {
                       extract($sp02);
                       $linksp="index.php?act=sanphamct&idsp=".$id;
-                      $img=$img_path.$img;
+                      $hinh=$img_path.$img;
                       echo '<div class="item">              
                       <div class="special-products-block">
                         <div class="product-item">
                           
-                          <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$img.'" alt=""> </a> </div>
+                          <div class="product-image"> <a href="'.$linksp.'"> <img src="'.$hinh.'" alt=""> </a> </div>
                         </div>
                         <div class="pro-detail-main">
                           <div class="product-item-details">
