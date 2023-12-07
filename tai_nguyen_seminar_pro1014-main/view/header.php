@@ -257,35 +257,40 @@
               </li>
               <li class="cart-icon"> <a href="index.php?act=addtocart"> <span> <small class="cart-notification">2</small> </span> </a>
                 <div class="cart-dropdown header-link-dropdown">
-                  <ul class="cart-list link-dropdown-list">
-                    <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                      <div class="media"> <a class="pull-left"> <img alt="" src=""></a>
-                        <div class="media-body"> <span><a></a></span>
-                          <p class="cart-price"></p>
-                          <div class="product-qty">
-                            <label></label>
-                            <div class="custom-qty">
-                              <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                      <div class="media"> <a class="pull-left"> <img alt="" src=""></a>
-                        <div class="media-body"> <span><a></a></span>
-                          <p class="cart-price"></p>
-                          <div class="product-qty">
-                            <label></label>
-                            <div class="custom-qty">
-                              <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <p class="cart-sub-totle"> <span class="pull-left">Tổng tiền giỏ hàng</span> <span class="pull-right"><strong class="price-box"></strong></span> </p>
+                <?php
+                  
+                  $tong=0;
+                  $i=0;
+                foreach ($_SESSION['mycart'] as $cart) {
+                    
+                      $hinh=$img_path.$cart[2];
+                     $ttien=$cart[3]*$cart[4];
+                     $tong+=$ttien;
+                     $xoasp="index.php?act=delcart&idcart=".$i;
+                     echo ' <ul class="cart-list link-dropdown-list">
+                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                       <div class="media"> <a class="pull-left"> <img alt="Minimo" src="'.$hinh.'"></a>
+                         <div class="media-body"> <span><a>'.$cart[1].'</a></span>
+                           <p class="cart-price">'.$cart[3].'</p>
+                           <div class="product-qty">
+                             <label>Qty:</label>
+                             <div class="custom-qty">
+                               <input type="text" name="qty" maxlength="8" value="'.$cart[4].'" title="Qty" class="input-text qty">
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </li>
+                     
+                   </ul>';
+                   $i+=1;
+                }
+
+                echo'<p class="cart-sub-totle"> <span class="pull-left">Cart Subtotal</span> <span class="pull-right"><strong class="price-box">'.$tong.'</strong></span> </p>';
+
+                
+        ?>
+                  <!-- <p class="cart-sub-totle"> <span class="pull-left">Tổng tiền giỏ hàng</span> <span class="pull-right"><strong class="price-box"></strong></span> </p> -->
                   <div class="clearfix"></div>
                   <div class="mt-20"> <a href="index.php?act=addtocart" class="btn-color btn">Giỏ</a> <a href="index.php?act=bill" class="btn-color btn right-side">Thủ tục thanh toán</a> </div>
                 </div>

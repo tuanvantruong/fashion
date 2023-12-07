@@ -170,6 +170,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 array_push($_SESSION['mycart'],$spadd);              
             }
             include "view/cart/viewcart.php";
+            header('Location: index.php');
             break;
             case "delcart":
                 if(isset($_GET['idcart'])){
