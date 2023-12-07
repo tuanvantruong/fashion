@@ -2,11 +2,11 @@
  <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Your Account </h1>
+        <h1 class="banner-title">Tài khoản của bạn</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><span>Account Settings</span></li>
+            <li><a href="index.html">Trang chủ</a>/</li>
+            <li><span>Cài đặt tài khoản</span></li>
           </ul>
         </div>
       </section>
@@ -22,15 +22,15 @@
           <div class="account-sidebar account-tab mb-xs-30">
             <div class="dark-bg tab-title-bg">
               <div class="heading-part">
-                <div class="sub-title"><span></span> My Account</div>
+                <div class="sub-title"><span></span> Tài khoản của tôi</div>
               </div>
             </div>
             <div class="account-tab-inner">
               <ul class="account-tab-stap">
-                <li id="step1" class="active"> <a href="javascript:void(0)">My Dashboard<i class="fa fa-angle-right"></i> </a> </li>
-                <li id="step2"> <a href="javascript:void(0)">Account Details<i class="fa fa-angle-right"></i> </a> </li>
-                <li id="step3"> <a href="javascript:void(0)">My Order List<i class="fa fa-angle-right"></i> </a> </li>
-                <li id="step4"> <a href="javascript:void(0)">Change Password<i class="fa fa-angle-right"></i> </a> </li>
+                <li id="step1" class="active"> <a href="javascript:void(0)">Bảng điều khiển<i class="fa fa-angle-right"></i> </a> </li>
+                <li id="step2"> <a href="javascript:void(0)">Chi tiết tài khoản<i class="fa fa-angle-right"></i> </a> </li>
+                <li id="step3"> <a href="javascript:void(0)">Danh sách đơn hàng của tôi<i class="fa fa-angle-right"></i> </a> </li>
+                <li id="step4"> <a href="javascript:void(0)">Đổi mật khẩu<i class="fa fa-angle-right"></i> </a> </li>
               </ul>
             </div>
           </div>
@@ -40,7 +40,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part heading-bg mb-30">
-                  <h2 class="heading m-0">Account Dashboard</h2>
+                  <h2 class="heading m-0">Trang tổng quan tài khoản</h2>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
               <div class="row">
                 <div class="col-xs-12 mb-20">
                   <div class="heading-part">
-                    <h3 class="sub-heading">Account Information</h3>
+                    <h3 class="sub-heading">Thông tin tài khoản</h3>
                   </div>
                   <hr>
                 </div>

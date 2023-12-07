@@ -2,12 +2,12 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Checkout</h1>
+        <h1 class="banner-title">Thủ tục thanh toán</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><a href="cart.html">Cart</a>/</li>
-            <li><span>Checkout</span></li>
+            <li><a href="index.html">Trang chủ</a>/</li>
+            <li><a href="cart.html">Giỏ hàng</a>/</li>
+            <li><span>Thủ tục thanh toán</span></li>
           </ul>
         </div>
       </section>
@@ -27,25 +27,25 @@
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
-                <span>Shipping</span> </a> </li>
+                <span>Địa chỉ giao hàng</span> </a> </li>
               <li> <a href="order-overview.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
-                <span>Order Overview</span> </a> </li>
+                <span>Tổng quan đơn hàng</span> </a> </li>
               <li> <a href="payment.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">3</div>
                 </div>
-                <span>Payment</span> </a> </li>
+                <span>Phương thức thanh toán</span> </a> </li>
               <li> <a href="order-complete.html">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">4</div>
                 </div>
-                <span>Order Complete</span> </a> </li>
+                <span>Đặt hàng thành công</span> </a> </li>
               <li>
                 <div class="step">
                   <div class="line"></div>
@@ -58,7 +58,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part align-center">
-                  <h2 class="heading">Please fill up your Shipping details</h2>
+                  <h2 class="heading">Vui lòng điền chi tiết thông tin vận chuyển của bạn</h2>
                 </div>
               </div>
             </div>
@@ -69,44 +69,44 @@
                     <div class="row">
                       <div class="col-xs-12 mb-20">
                         <div class="heading-part">
-                          <h3 class="sub-heading">Shipping Address</h3>
+                          <h3 class="sub-heading">Địa chỉ giao hàng</h3>
                         </div>
                         <hr>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Full Name">
+                          <input type="text" required placeholder="Họ tên đầy đủ">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="email" required placeholder="Email Address">
+                          <input type="email" required placeholder="Địa chỉ email">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Company">
+                          <input type="text" required placeholder="Công ty  ">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Contact Number">
+                          <input type="text" required placeholder="Số điện thoại">
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="input-box">
-                          <input type="text" required placeholder="Shipping Address">
-                          <span>Please provide the number and street.</span> </div>
+                          <input type="text" required placeholder="Địa chỉ giao hàng">
+                          <span>Vui lòng cung cấp số nhà và đường phố.</span> </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="input-box">
-                          <input type="text" required placeholder="Shipping Landmark">
-                          <span>Please include landmark (e.g : Opposite Bank) as the carrier service may find it easier to locate your address.</span> </div>
+                          <input type="text" required placeholder="Cột mốc vận chuyển">
+                          <span>Vui lòng bao gồm mốc (ví dụ: Ngân hàng đối diện) vì dịch vụ của nhà cung cấp dịch vụ có thể tìm thấy địa chỉ của bạn dễ dàng hơn.</span> </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
                           <select name="shippingCountryId" id="shippingcountryid">
-                            <option selected="" value="">Select Country</option>
+                            <option selected="" value="">Chọn quốc gia</option>
                             <option value="AX">Aland Islands</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AL">Albania</option>
@@ -405,7 +405,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Select City">
+                          <input type="text" required placeholder="Chọn thành phố">
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -419,33 +419,33 @@
                     <div class="row">
                       <div class="col-xs-12 mb-20">
                         <div class="heading-part">
-                          <h3 class="sub-heading">Billing Address</h3>
+                          <h3 class="sub-heading">Địa chỉ thanh toán</h3>
                         </div>
                         <hr>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Full Name">
+                          <input type="text" required placeholder="Họ tên đầy đủ">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Email Address">
+                          <input type="text" required placeholder="Địa chỉ Email">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Company">
+                          <input type="text" required placeholder="Công ty">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Contact Number">
+                          <input type="text" required placeholder="Số điện thoại">
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="input-box">
-                          <input type="text" required placeholder="Billing Address">
+                          <input type="text" required placeholder="Địa chỉ thanh toán">
                           <span>Please provide the number and street.</span> </div>
                       </div>
                       <div class="col-sm-12">
@@ -767,7 +767,7 @@
                         <div class="check-box"> <span>
                           <input type="checkbox" class="checkbox" id="chk-billing-address" name="chk-billing-address">
                           </span>
-                          <label for="chk-billing-address">Use my delivery address as my billing address</label>
+                          <label for="chk-billing-address">Sử dụng địa chỉ giao hàng của tôi làm địa chỉ thanh toán</label>
                         </div>
                       </div>
                       <div class="col-sm-12"> <a href="order-overview.html" class="btn btn-color right-side">Next</a> </div>

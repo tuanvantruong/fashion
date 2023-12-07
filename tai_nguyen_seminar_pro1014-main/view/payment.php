@@ -2,12 +2,12 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Checkout</h1>
+        <h1 class="banner-title">Thủ tục thanh toán</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Home</a>/</li>
-            <li><a href="index.php?act=bill">Cart</a>/</li>
-            <li><span>Checkout</span></li>
+            <li><a href="index.php">Trang chủ</a>/</li>
+            <li><a href="index.php?act=bill">Giỏ hàng</a>/</li>
+            <li><span>Thủ tục thanh toán</span></li>
           </ul>
         </div>
       </section>
@@ -27,19 +27,19 @@
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
-                <span>Shipping</span> </a> </li>
+                <span>Thông tin giao hàng</span> </a> </li>
               <li class="active"> <a href="index.php?act=payment">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
-                <span>Payment</span> </a> </li>
+                <span>Phương thức thanh toán</span> </a> </li>
               <li> <a href="index.php?act=order-complete">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">3</div>
                 </div>
-                <span>Order Complete</span> </a> </li>
+                <span>Thanh toán thành công</span> </a> </li>
               <li>
                 <div class="step">
                   <div class="line"></div>
@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part align-center">
-                  <h2 class="heading">Select a payment method</h2>
+                  <h2 class="heading">Lựa chọn phương thức thanh toán</h2>
                 </div>
               </div>
             </div>
@@ -64,15 +64,15 @@
                       <div class="radio-box left-side"> <span>
                         <input type="radio" id="paypal" value="paypal" name="payment_type">
                         </span>
-                        <label for="paypal">PayPal</label>
+                        <label for="paypal">VNPay</label>
                       </div>
                       <div class="paypal-box">
                         <div class="paypal-top"> <img src="images/paypal-img.png" alt="Honour"> </div>
                         <div class="paypal-img"> <img src="images/payment-method.png" alt="Honour"> </div>
                       </div>
                     </div>
-                    <p>If you Don't have CCAvenue Account, it doesn,t matter. You can also pay via CCAvenue with you credit card or bank debit card</p>
-                    <p>Payment can be submitted in any currency.</p>
+                    <p>Nếu bạn không có Tài khoản VNPay thì cũng không thành vấn đề. Bạn cũng có thể thanh toán qua MOMO bằng thẻ tín dụng hoặc thẻ ghi nợ ngân hàng</p>
+                    <p>Chỉ có thể thanh toán bằng VNĐ.</p>
                   </div>
                 </div>
                 <div class="payment-option-box mb-30">
@@ -81,13 +81,13 @@
                       <div class="radio-box left-side"> <span>
                         <input type="radio" id="cash" value="cash" name="payment_type">
                         </span>
-                        <label for="cash">Would you like to pay by Cash on Delivery?</label>
+                        <label for="cash">Bạn có muốn thanh toán bằng tiền mặt khi giao hàng không?</label>
                       </div>
                     </div>
-                    <p>Vestibulum semper accumsan nisi, at blandit tortor maxi'mus in phasellus malesuada sodales odio, at dapibus libero malesuada quis.</p>
+                    <p>Bạn có thể thanh toán khi nhận được hàng.</p>
                   </div>
                 </div>
-                <div class="right-side float-none-xs"> <a class="btn btn-black" href="index.php?act=order-complete">Place Order<span><i class="fa fa-angle-right"></i></span></a> </div>
+                <div class="right-side float-none-xs"> <a class="btn btn-black" href="index.php?act=order-complete">Đặt hàng<span><i class="fa fa-angle-right"></i></span></a> </div>
               </div>
             </div>
           </div>
