@@ -4,12 +4,12 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Thủ tục thanh toán</h1>
+        <h1 class="banner-title">Checkout</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Trang chủ</a>/</li>
-            <li><a href="index.php?act=addtocart">Giỏ hàng</a>/</li>
-            <li><span>Thủ tục thanh toán</span></li>
+            <li><a href="index.php">Home</a>/</li>
+            <li><a href="index.php?act=addtocart">Cart</a>/</li>
+            <li><span>Checkout</span></li>
           </ul>
         </div>
       </section>
@@ -27,19 +27,13 @@
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>
-                <span>Thông tin giao hàng</span> </a> </li>
-              <li> <a href="index.php?act=payment">
+                <span>Shipping</span> </a> </li>
+              <li> <a href="index.php?act=order-complete">
                 <div class="step">
                   <div class="line"></div>
                   <div class="circle">2</div>
                 </div>
-                <span>PHương thức thanh toán</span> </a> </li>
-              <li> <a href="index.php?act=order-complete">
-                <div class="step">
-                  <div class="line"></div>
-                  <div class="circle">3</div>
-                </div>
-                <span>Thanh toán thành công</span> </a> </li>
+                <span>Order Complete</span> </a> </li>
               <li>
                 <div class="step">
                   <div class="line"></div>
@@ -52,18 +46,18 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="heading-part align-center">
-                  <h2 class="heading">Vui lòng điền chi tiết vận chuyển của bạn</h2>
+                  <h2 class="heading">Please fill up your Shipping details</h2>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-6 col-md-8 col-sm-8 col-lg-offset-3 col-sm-offset-2">
-                <form action="https://webcotheme.com/honour/demo2/hon001/order-overview.html" class="main-form full">
+                <form action="https://webcotheme.com/honour/demo2/hon001/order-overview.html" class="main-form full" action="index.php?act=billcomfirm" method="post">
                   <div class="mb-20">
                     <div class="row">
                       <div class="col-xs-12 mb-20">
                         <div class="heading-part">
-                          <h3 class="sub-heading">Địa chỉ giao hàng</h3>
+                          <h3 class="sub-heading">Shipping Address</h3>
                         </div>
                         <hr>
                       </div>
@@ -82,40 +76,84 @@
                       ?>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Họ tên đầy đủ" value="<?=$name?>" name="user" >
+                          <input type="text" required placeholder="Full Name" value="<?=$name?>" name="user" >
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="email" required placeholder="Địa chỉ email" value="<?=$email?>" name="email">
+                          <input type="email" required placeholder="Email Address" value="<?=$email?>" name="email">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Công ty">
+                          <input type="text" required placeholder="Company">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="input-box">
-                          <input type="text" required placeholder="Số điện thoại"value="<?=$tel?>" name="tel">
+                          <input type="text" required placeholder="Contact Number"value="<?=$tel?>" name="tel">
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="input-box">
-                          <input type="text" required placeholder="Địa chỉ giao hàng" value="<?=$address?>" name="address">
-                          <span>Vui lòng cung cấp số nhà và đường phố.</span> </div>
+                          <input type="text" required placeholder="Shipping Address" value="<?=$address?>" name="address">
+                          <span>Please provide the number and street.</span> </div>
                       </div>
                 
                     </div>
                   </div>
+                  
                   <div class="">
                   
-                </form>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="checkout-content">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="heading-part align-center">
+                  <h2 class="heading">Select a payment method</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-8 col-sm-8 col-lg-offset-3 col-sm-offset-2">
+                <div class="payment-option-box mb-30">
+                  <div class="payment-option-box-inner gray-bg">
+                    <div class="payment-top-box">
+                      <div class="radio-box left-side"> <span>
+                        <input type="radio" id="paypal" value="1" name="pttt">
+                        </span>
+                        <label for="paypal">PayPal</label>
+                      </div>
+                      <div class="paypal-box">
+                        <div class="paypal-top"> <img src="images/paypal-img.png" alt="Honour"> </div>
+                        <div class="paypal-img"> <img src="images/payment-method.png" alt="Honour"> </div>
+                      </div>
+                    </div>
+                    <p>If you Don't have CCAvenue Account, it doesn,t matter. You can also pay via CCAvenue with you credit card or bank debit card</p>
+                    <p>Payment can be submitted in any currency.</p>
+                  </div>
+                </div>
+                <div class="payment-option-box mb-30">
+                  <div class="payment-option-box-inner gray-bg">
+                    <div class="payment-top-box">
+                      <div class="radio-box left-side"> <span>
+                        <input type="radio" id="cash" value="2" name="pttt">
+                        </span>
+                        <label for="cash">Would you like to pay by Cash on Delivery?</label>
+                      </div>
+                    </div>
+                    <p>Vestibulum semper accumsan nisi, at blandit tortor maxi'mus in phasellus malesuada sodales odio, at dapibus libero malesuada quis.</p>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
             <div class="row">
         <div class="col-xs-12 mb-xs-30">
           <div class="cart-item-table commun-table">
@@ -130,15 +168,15 @@
                         <div class="check-box"> <span>
                           <input type="checkbox" class="checkbox" id="chk-billing-address" name="chk-billing-address">
                           </span>
-                          <label for="chk-billing-address">Sử dụng địa chỉ giao hàng của tôi làm địa chỉ thanh toán.</label>
+                          <label for="chk-billing-address">Use my delivery address as my billing address</label>
                         </div>
-                      </div>
-                      <div class="col-sm-12"> <a href="index.php?act=payment" class="btn btn-color right-side" name="dongydathang">Tiếp theo</a> </div>
+                      </div> 
+                      <div class="col-sm-12"> <a href="index.php?act=billcomfirm" class="btn btn-color right-side" name="dongydathang" >Next</a> </div>
               </table>
             </div>
           </div>
         </div>
-       
+        </form>
       </div>
       
     </div>
