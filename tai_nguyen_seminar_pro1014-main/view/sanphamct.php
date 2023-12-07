@@ -84,8 +84,22 @@
                         <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items" type="button"> <i class="fa fa-plus"></i> </button>
                       </div>
                     </div>
-                    <div class="bottom-detail cart-button">
+                    
+                      <div class="bottom-detail cart-button">
                       <ul>
+<<<<<<< HEAD
+                      <li class="pro-cart-icon">
+                               <form action="index.php?act=addtocart" method="post">
+                                 <input type="hidden" name="id" >
+                                 <input type="hidden" name="name" value="'.$name.'">
+                                 <input type="hidden" name="img" value="'.$img.'">
+                                 <input type="hidden" name="price" value="'.$price.'">
+                                 <input type="hidden" name="price" value="'.$mota.'">
+                                 <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                                 
+                               </form>
+                             </li>
+=======
                         <li class="pro-cart-icon">
                           
                           <form action="index.php?act=addtocart" method="post">
@@ -97,8 +111,10 @@
                                 </form>
                          
                         </li>
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                       </ul>
                     </div>
+                   
                   </div>
                   <div class="bottom-detail">
                     <ul>
@@ -275,11 +291,21 @@
                           <ul>
                           <li class="pro-cart-icon">
                             <form action="index.php?act=addtocart" method="post">
+<<<<<<< HEAD
+                              <input type="hidden" name="id" value="'.$id.'">
+                              <input type="hidden" name="name" value="'.$name.'">
+                              <input type="hidden" name="img" value="'.$img.'">
+                              <input type="hidden" name="price" value="'.$price.'">
+                              <input type="hidden" name="price" value="'.$mota.'">
+                              <input type="submit" name="addtocart" class="btn-black" value="Add To Cart" >
+                              
+=======
                             <input type="hidden" name="id" value="'.$id.'">
                             <input type="hidden" name="name" value="'.$name.'">
                             <input type="hidden" name="img" value="'.$img.'">
                             <input type="hidden" name="price" value="'.$price.'">
                             <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+>>>>>>> 9a22b9845a0d032b4384ae52b6468df9ef1735a8
                             </form>
                           </li>
                           <li class="pro-wishlist-icon"><a href="#"></a></li>

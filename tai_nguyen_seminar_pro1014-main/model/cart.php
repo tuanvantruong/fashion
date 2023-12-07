@@ -79,7 +79,7 @@ function viewcart($del){
                            <table class="table">
                              <thead>
                                <tr>
-                                 <th colspan="2">Cart Total</th>
+                                 <th colspan="3">Cart Total</th>
                                </tr>
                              </thead>
                              <tbody>
@@ -94,9 +94,11 @@ function viewcart($del){
                                <tr>
                                  <td><b>Amount Payable</b></td>
                                  <td><div class="price-box"> <span class="price"><b>'.$tong.'</b></span> </div></td>
-                                 '.$xoasp_td2.'
+                                
                                </tr>
-
+                               <tr>
+                                  '.$xoasp_td2.'
+                                </tr>
                              </tbody>
                            </table>
                          </div>
