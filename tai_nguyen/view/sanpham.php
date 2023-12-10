@@ -2,11 +2,11 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Women</h1>
+        <h1 class="banner-title">Nữ</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.php">Home</a>/</li>
-            <li><span>Women</span></li>
+            <li><a href="index.php">Trang chủ</a>/</li>
+            <li><span>Nữ</span></li>
           </ul>
         </div>
       </section>
