@@ -80,7 +80,7 @@
         <div class="right-side float-none-sm">
           <div id="menu" class="navbar-collapse collapse left-side" >
             <ul class="nav navbar-nav navbar-left">
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">WOMEN</a>
+              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Thời Trang</a>
                 <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">
                     
@@ -103,7 +103,7 @@
                   </div>
                 </div>
               </li>
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Men</a>
+              <!-- <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Men</a>
                 <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">
                     
@@ -125,15 +125,15 @@
                   
                   </div>
                 </div>
-              </li>
-              <li class="level"> <span class="opener plus"></span> <a href="" class="page-scroll">JUNIORS</a>
+              </li> -->
+              <!-- <li class="level"> <span class="opener plus"></span> <a href="" class="page-scroll">JUNIORS</a>
                 
               </li>
               <li class="level"> <span class="opener plus"></span> <a class="page-scroll">KIDS</a>
     
-              </li>
-              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=gioithieu" class="page-scroll">ABOUT</a></li>
-              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=lienhe" class="page-scroll">CONTACT</a></li>
+              </li> -->
+              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=gioithieu" class="page-scroll">Giới Thiệu</a></li>
+              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=lienhe" class="page-scroll">Liên Hệ</a></li>
 
             </ul>
           </div>
