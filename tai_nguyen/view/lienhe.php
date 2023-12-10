@@ -2,11 +2,11 @@
   <div class="banner inner-banner align-center">
     <div class="container">
       <section class="banner-detail">
-        <h1 class="banner-title">Contact Us</h1>
+        <h1 class="banner-title">Liên hệ chúng tôi</h1>
         <div class="bread-crumb mt-30">
           <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><span>Contact</span></li>
+            <li><a href="index.html">Trang chủ</a>/</li>
+            <li><span>Liên hệ</span></li>
           </ul>
         </div>
       </section>
@@ -67,7 +67,7 @@
           <div class="col-sm-4 p-0">
             <div class="contact-box">
               <div class="contact-icon contact-phone-icon"></div>
-              <span><b>Tel</b></span>
+              <span><b>Điện thoại</b></span>
               <p>0123 456 789 / 0123 456 788</p>
             </div>
           </div>
@@ -75,14 +75,14 @@
             <div class="contact-box">
               <div class="contact-icon contact-mail-icon"></div>
               <span><b>Mail</b></span>
-              <p>infoservices@honour.com </p>
+              <p>thanhxtuu@gmail.com </p>
             </div>
           </div>
           <div class="col-sm-4 p-0">
             <div class="contact-box">
               <div class="contact-icon contact-open-icon"></div>
-              <span><b>Open</b></span>
-              <p>Mon – Sat: 9:00 – 18:00</p>
+              <span><b>Mở cửa</b></span>
+              <p>Thứ Hai – Thứ Bảy: 9:00 – 18:00</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="heading-part align-center mb-40">
-            <h2 class="main_title">Leave a message!</h2>
+            <h2 class="main_title">Để lại lời nhắn!</h2>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="col-xs-12">
               <div class="align-center">
-                <button type="submit" name="submit" class="btn-black">Submit</button>
+                <button type="submit" name="submit" class="btn-black">Nộp</button>
               </div>
             </div>
           </form>
