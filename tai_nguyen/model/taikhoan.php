@@ -14,14 +14,11 @@ function checkemail($email){
     return $sp;
 }
 
-function update_taikhoan($id){
-    $sql="UPDATE taikhoan SET trang_thai = 1 WHERE id = $id";
+function update_taikhoan($id, $trang_thai,$vaitro){
+    $sql="UPDATE taikhoan SET trang_thai  = '$trang_thai', role = '$vaitro'  WHERE id = $id";
   pdo_execute($sql);
 }
-function update_taikhoan_mo($id){
-    $sql="UPDATE taikhoan SET trang_thai = 0 WHERE id = $id";
-  pdo_execute($sql);
-}
+
 function delete_taikhoan($id){
     $sql="delete from taikhoan where id=".$id ;
     pdo_execute($sql);

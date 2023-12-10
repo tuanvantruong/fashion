@@ -46,6 +46,7 @@
                 <th>EMAIL</th>
                 <th>ĐỊA CHỈ</th>
                 <th>ĐIỆN THOẠI</th> 
+                <th>VAI TRÒ</th> 
                 <th>TRẠNG THÁI</th>
                 <th >THAO TÁC</th>
                
@@ -54,8 +55,21 @@
             <?php 
             foreach($listtaikhoan as $taikhoan){
                 extract($taikhoan);
-                $suatk="index.php?act=khoatk&id=".$id;
-                $motk="index.php?act=motk&id=".$id;
+                $update_taikhoan="index.php?act=capnhat_taikhoan&id=".$id;
+                // Hiển thị vai trò của khách hàng với admin
+                if($role == 0){
+                    $vaitro = "Khách hàng";
+                }else{
+                    $vaitro = "Admin";
+
+                }
+                // Hiện thị trạng thái tài khoản
+                if($trang_thai == 0){
+                    $tt = "Tk đang kích hoạt";
+                }else{
+                    $tt = "Tk đã bị khóa";
+
+                }
              
              echo ' <tr>
              <td><input type="checkbox" name="" id=""></td>
@@ -65,11 +79,11 @@
              <td>'.$email.'</td>
              <td>'.$address.'</td>
              <td>'.$tel.'</td>
+             <td>'.$vaitro.'</td>
          
-             <td>'.$trang_thai.'</td>
+             <td>'.$tt.'</td>
              <td>
-             <a href="'.$suatk.'"><input type="button" value="KHÓA TK"> </a>
-             <a href="'.$motk.'"><input type="button" value="MỞ TK"> </a>
+             <a href="'.$update_taikhoan.'"><input type="button" value="Cập nhật"> </a>
              </td>
          </tr>';
             }

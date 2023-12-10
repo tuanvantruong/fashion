@@ -164,24 +164,37 @@ $statistical_sale = statistical_sale(date('Y-m-d', time() - (86400 * 7)), date('
                     include "taikhoan/list.php";
                 break;
 
-                    // Khóa tài khoản
-                case 'khoatk':
-                    if(isset($_GET['id'])&&($_GET['id'])>0){
-                        update_taikhoan($_GET['id']);
-                    header('Location: index.php?act=dskh');
+                // Cập nhật vai trò của khách với trạng thái của khách hàng
+                case 'capnhat_taikhoan':
+                    if (isset($_POST['capnhat'])) {
+                        // Kiểm tra id có tồn tại hay không
+                        if (isset($_GET['id'])) {
+                            // Kiểm tra trạng thái 
+                            if (isset($_POST['trangthai'])) {
+                                $id = $_GET['id'];
+                                $trang_thai = $_POST['trangthai'];
+                                $sql = "UPDATE taikhoan SET trang_thai = $trang_thai WHERE id = $id";
+                                pdo_execute($sql);
+                                // Kiểm tra vai trò
+                            } elseif (isset($_POST['vaitro'])) {
+                                
+                                $id = $_GET['id'];
+                                $vaitro = $_POST['vaitro'];
+                                $sql = "UPDATE taikhoan SET role = $vaitro WHERE id = $id";
+                                pdo_execute($sql);
 
+                            }
+                            $thongbao = "Cập nhật thành công";
+                        } else {
+                            $thongbao = "Không có ID khách hàng được cung cấp.";
+                        }
+                    } else {
+                        $thongbao = "Không có yêu cầu cập nhật được gửi đi.";
                     }
+               
+                    include "taikhoan/update.php";
+                    break;
 
-                 
-                break;
-                // Mở tài khoản
-                case 'motk':
-                    if(isset($_GET['id'])&&($_GET['id'])>0){
-                        update_taikhoan_mo($_GET['id']);
-                    header('Location: index.php?act=dskh');
-
-                    }
-                   
                 break;
                    // Đơn hàng
                    case 'donhang':

@@ -194,23 +194,28 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/taikhoan/dangky.php";
             break;
-        case "dangnhap":
-            // unset($_SESSION['user']);
-            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $checkuser = checkuser($user, $pass);
-                if (is_array($checkuser)) {
-                    $_SESSION['user'] = $checkuser;
-                    // $_SESSION['pass'] = $checkuser;
-                    header('Location: index.php?act=home');
-                    // $thongbao="bạn đã đăng nhập thành công ";
-                } else {
-                    $thongbao = "Tài khoản không tồn tại. Vui lòng đăng ký";
+            case "dangnhap":
+                if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $checkuser = checkuser($user, $pass);
+            
+                    if (is_array($checkuser) && isset($checkuser['trang_thai'])) {
+                        if ($checkuser['trang_thai'] == 0) {
+                            // Đang nhập thành công
+                            $_SESSION['user'] = $checkuser;
+                            header('Location: index.php?act=home');
+                        } else {
+                            // Đang nhập không thành công
+                            $thongbao = "Tài khoản đã bị xóa. Vui lòng liên hệ quản trị viên.";
+                        }
+                    } else {
+                        // DTài khoản k tồn tại
+                        $thongbao = "Tài khoản không tồn tại. Vui lòng đăng ký.";
+                    }
                 }
-            }
-            include "view/taikhoan/dangnhap.php";
-            break;
+                include "view/taikhoan/dangnhap.php";
+                break; 
         case "edit_taikhoan":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $email = $_POST['email'];
