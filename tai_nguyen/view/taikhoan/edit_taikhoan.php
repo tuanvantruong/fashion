@@ -15,36 +15,36 @@
              <div class="row">
                   <div class="col-xs-12 mb-20">
                     <div class="heading-part heading-bg">
-                      <h2 class="heading">Update account</h2>
+                      <h2 class="heading">Cập nhật tài khoản</h2>
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-email">User name</label>
+                      <label for="login-email">Tên tài khoản</label>
                       <input id="login-email" name="user" type="text" required placeholder="User name" value="<?=$user?>">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-email">Email address</label>
+                      <label for="login-email">Địa chỉ email</label>
                       <input id="login-email" name="email" type="email" required placeholder="Email Address" value="<?=$email?>">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-pass">Password</label>
+                      <label for="login-pass">Mật khẩu</label>
                       <input id="login-pass" name="pass" type="password" required placeholder="Enter your Password" value="<?=$pass?>">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-pass">Address</label>
+                      <label for="login-pass">Địa chỉ</label>
                       <input id="login-pass" name="address" type="text" required placeholder="Enter your Address" value="<?=$address?>">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-pass">Tel</label>
+                      <label for="login-pass">Điện thoại</label>
                       <input id="login-pass" name="tel" type="text" required placeholder="Enter your tel" value="<?=$tel?>">
                     </div>
                   </div>

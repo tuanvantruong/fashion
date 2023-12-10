@@ -9,24 +9,24 @@
              <div class="row">
                   <div class="col-xs-12 mb-20">
                     <div class="heading-part heading-bg">
-                      <h2 class="heading">Create your account</h2>
+                      <h2 class="heading">Tạo tài khoản của bạn</h2>
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-email">User name</label>
+                      <label for="login-email">Tên tài khoản</label>
                       <input id="login-email" name="user" type="text" required placeholder="User name">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-email">Email address</label>
+                      <label for="login-email">Địa chỉ email</label>
                       <input id="login-email" name="email" type="email" required placeholder="Email Address">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-pass">Password</label>
+                      <label for="login-pass">Mật khẩu</label>
                       <input id="login-pass" name="pass" type="password" required placeholder="Enter your Password">
                     </div>
                   </div>
@@ -36,14 +36,14 @@
                        <span>
                       <input type="checkbox" name="remember_me" id="remember_me" class="checkbox">
                       </span>
-                      <label for="remember_me">Remember Me</label>
+                      <label for="remember_me">Nhớ tài khoản mật khẩu</label>
                     </div>
-                    <input class="submit" type="submit" name="dangky" value="Submit">
+                    <input class="submit" type="submit" name="dangky" value="Đăng ký">
 
                   </div>
                   <div class="col-xs-12">
                     <hr>
-                    <div class="new-account align-center mt-20"> <span>Already have an account with us</span> <a class="link" title="Register with Honour" href="index.php?act=dangnhap">Login Here</a> </div>
+                    <div class="new-account align-center mt-20"> <span>Đã có tài khoản </span> <a class="link" title="Register with Honour" href="index.php?act=dangnhap">Đăng nhập</a> </div>
                   </div>
                 </div>
                 <h4 class="thongbao">

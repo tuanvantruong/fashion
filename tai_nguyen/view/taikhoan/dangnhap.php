@@ -79,7 +79,7 @@
                           ?>
                              <div class="col-xs-12">
                     <div class="input-box">
-                      <h3>Hello. Wellcome to my website</h3><br>
+                      <h3>Xin chào. Chào mừng đến với trang web của chúng tôi</h3><br>
                            <?=$user?>
                       
                     </div>
@@ -109,18 +109,18 @@
               <div class="row">
                   <div class="col-xs-12 mb-20">
                     <div class="heading-part heading-bg">
-                      <h2 class="heading">Customer Login</h2>
+                      <h2 class="heading">Đăng nhập khách hàng</h2>
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-email">User name</label>
+                      <label for="login-email">Tên tài khoản</label>
                       <input  name="user" type="text" required placeholder="User name">
                     </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">
-                      <label for="login-pass">Password</label>
+                      <label for="login-pass">Mật khẩu</label>
                       <input id="login-pass" name="pass" type="password" required placeholder="Enter your Password">
                     </div>
                   </div>
@@ -128,16 +128,16 @@
                     <div class="check-box left-side"> <span>
                       <input type="checkbox" name="remember_me" id="remember_me" class="checkbox">
                       </span>
-                      <label for="remember_me">Remember Me</label>
+                      <label for="remember_me">Lưu tài khoản</label>
                     </div>
                     <!-- <button name="submit" type="submit" class="btn-color right-side">Log In</button> -->
-                    <input class="submit" type="submit" name="dangnhap" value="Sign in">
+                    <input class="submit" type="submit" name="dangnhap" value="Đăng nhập">
                   </div>
-                  <div class="col-xs-12"> <a title="Forgot Password" class="forgot-password mtb-20" href="index.php?act=quenmk">Forgot your password?</a>
+                  <div class="col-xs-12"> <a title="Forgot Password" class="forgot-password mtb-20" href="index.php?act=quenmk">Quên mật khẩu?</a>
                     <hr>
                   </div>
                   <div class="col-xs-12">
-                    <div class="new-account align-center mt-20"> <span>New to Honour?</span> <a class="link" title="Register with Honour" href="index.php?act=dangky">Create New Account</a> </div>
+                    <div class="new-account align-center mt-20"> <span>Mới tham gia Honor?</span> <a class="link" title="Register with Honour" href="index.php?act=dangky">Tạo tài khoản mới</a> </div>
                   </div>
                 </div>
               </form>
