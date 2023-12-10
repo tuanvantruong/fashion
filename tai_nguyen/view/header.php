@@ -9,7 +9,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta charset="utf-8">
-<title>Honour Index</title>
+<title>Honour</title>
 <!-- SEO Meta
   ================================================== -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,8 +41,7 @@
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
-  intent="WELCOME"
-  chat-title="fashionshop"
+  chat-title="Honour"
   agent-id="cc8d03b0-72b4-447b-96b5-014cfb489f81"
   language-code="vi"
 ></df-messenger>
