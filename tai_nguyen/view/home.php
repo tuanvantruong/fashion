@@ -242,7 +242,7 @@
                          <div class="pro-detail-main">
                            <div class="product-item-details">
                              <div class="product-item-name"> <a href="<?=$linksp?>"><?=$name?></a> </div>
-                             <div class="price-box"> <span class="price"><?=$price?></span> <del class="price old-price">$100.00</del> </div>
+                             <div class="price-box"> <span class="price"><?=$price?></span> <del class="price old-price">100.00</del> </div>
                              <div class="rating-summary-block">
                                <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
                                <span class="label-review"><span>( 2 review )</span></span> </div>
@@ -260,7 +260,7 @@
                               <input type="hidden" name="soluong" value="1">
                               <input type="submit" name="addtocart" value="Thêm giỏ hàng">
                               <!-- //<button type="submit" name="addtocart"></button> -->
-                            </form>
+                              </form>
                              </li>
                              <li class="pro-wishlist-icon"><a href="#"><span></span>Wishlist</a></li>
                           <li class="pro-compare-icon"><a href="#"><span></span>Compare</a></li>

@@ -79,7 +79,40 @@
               </div>
               <div class="sidebar-contant">
                 <ul>
-                  <li>
+
+                <?php
+                foreach ($dstop03 as $sp03) :
+                  extract($sp03);
+                       $linksp="index.php?act=sanphamct&idsp=".$id;
+                       $hinh=$img_path.$img;
+                       ?>
+                       <li>
+                       <div class="pro-media"> <a href="<?=$linksp?>"><img alt="T-shirt" src="<?=$hinh?>"></a> </div>
+                       <div class="pro-detail-info"> <a href="<?=$linksp?>"><?=$name?></a>
+                         <div class="rating-summary-block">
+                           <div class="rating-result" title="53%"> <span style="width:53%"></span> </div>
+                         </div>
+                         <div class="price-box"> <span class="price"><?=$price?></span> </div>
+                         <div class="cart-link">
+                         <form action="index.php?act=addcart" method="post">
+                              <input type="hidden" name="id" value="<?=$id?>">
+                              <input type="hidden" name="name" value="<?=$name?>">
+                              <input type="hidden" name="img" value="<?=$img?>">
+                              <input type="hidden" name="price" value="<?=$price?>">
+                              <input type="hidden" name="mota" value="<?=$mota?>">
+                              <input type="hidden" name="soluong" value="1">
+                              <input type="submit" name="addtocart" value="Thêm giỏ hàng">
+                              <!-- //<button type="submit" name="addtocart"></button> -->
+                              </form>
+                         </div>
+                       </div>
+                       </li>
+                       <?php
+                       endforeach;
+                
+
+?>
+                  <!-- <li>
                     <div class="pro-media"> <a><img alt="T-shirt" src="images/1.jpg"></a> </div>
                     <div class="pro-detail-info"> <a>Black African Print</a>
                       <div class="rating-summary-block">
@@ -92,8 +125,8 @@
                         </form>
                       </div>
                     </div>
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <div class="pro-media"> <a><img alt="T-shirt" src="images/1.jpg"></a> </div>
                     <div class="pro-detail-info"> <a>Black African Print</a>
                       <div class="rating-summary-block">
@@ -106,8 +139,8 @@
                         </form>
                       </div>
                     </div>
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <div class="pro-media"> <a><img alt="T-shirt" src="images/1.jpg"></a> </div>
                     <div class="pro-detail-info"> <a>Black African Print</a>
                       <div class="rating-summary-block">
@@ -120,7 +153,7 @@
                         </form>
                       </div>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>

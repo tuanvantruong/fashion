@@ -16,6 +16,7 @@ $sanpham = loadall_sanpham_home();
 $dsdm = loadall_danhmuc();
 $dstop10 = loadall_sanpham_top10();
 $dstop02= loadall_sanpham_top02();
+$dstop03= loadall_sanpham_top03();
 include "view/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
