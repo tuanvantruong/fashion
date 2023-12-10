@@ -1,277 +1,107 @@
 <?php
-session_start();
-ob_start();
-include "model/pdo.php";
-include "model/sanpham.php";
-include "model/taikhoan.php";
-include "model/danhmuc.php";
-include "model/order.php";
-include "model/cart.php";
-// include "order-complete.php";
-///ảnh lên home
-include "global.php";
-// ...
-if(!isset($_SESSION['mycart'])) $_SESSION['mycart']=[];
-$sanpham = loadall_sanpham_home();
-$dsdm = loadall_danhmuc();
-$dstop10 = loadall_sanpham_top10();
-$dstop02= loadall_sanpham_top02();
-include "view/header.php";
-if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
-    $act = $_GET['act'];
-    switch ($act) {
-        case "delcart": 
-            if(isset($_GET['idcart'])){
-                array_splice($_SESSION['mycart'], $_GET['idcart'], 1);
-            }else{
-                $_SESSION['mycart']=[];
-            }
-            header('Location: index.php?act=viewcart');
-            exit();
-            break;
-            case "sanpham":
-                if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
-                    $kyw = $_POST['kyw'];
-                } else {
-                    $kyw = "";
-                }
-                if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                    $iddm = $_GET['iddm'];  
-                } else {
-                    $iddm =0;
-                }
-                $dssp = loadall_sanpham($kyw, $iddm);
-                $tendm = load_ten_dm($iddm);
-                include "view/sanpham.php";
-                break;
-        case "order":
-            if (isset($_SESSION['cart'])) {
-                $cart = $_SESSION['cart'];
-                // print_r($cart);
-                if (isset($_POST['order_confirm'])) {
-                    $txthoten = $_POST['txthoten'];
-                    $txttel = $_POST['txttel'];
-                    $txtemail = $_POST['txtemail'];
-                    $txtaddress = $_POST['txtaddress'];
-                    $pttt = $_POST['pttt'];
-                    // date_default_timezone_set('Asia/Ho_Chi_Minh');
-                    // $currentDateTime = date('Y-m-d H:i:s');
-                    if (isset($_SESSION['user'])) {
-                        $id_user = $_SESSION['user']['id'];
-                    } else {
-                        $id_user = 0;
-                    }
-                    $idBill = addOrder($id_user, $txthoten, $txttel, $txtemail, $txtaddress, $_SESSION['resultTotal'], $pttt);
-                    foreach ($cart as $item) {
-                        addOrderDetail($idBill, $item['id'], $item['price'], $item['quantity'], $item['price'] * $item['quantity']);
-                    }
-                    unset($_SESSION['cart']);
-                    $_SESSION['success'] = $idBill;
-                    header("Location: index.php?act=success");
-                }
-                include "view/order.php";
-            } else {
-                header("Location: index.php?act=listCart");
-            }
-            break;
-        case "success":
-            if (isset($_SESSION['success'])) {
-                include 'view/success.php';
-            } else {
-                header("Location: index.php");
-            }
-            break;
-        case "sanphamct":
-            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
-                $id = $_GET['idsp'];
-                $onesp = loadone_sanpham($id);
-                extract($onesp);
-                $sp_cung_loai = load_sanpham_cungloai($id,$iddm);
-                
-                include "view/sanphamct.php";
-            } else {
-                include "view/home.php";
-            }
-            break;
-        case "dangky":
-            if (isset($_POST['dangky']) && ($_POST['dangky'])) {
-                $email = $_POST['email'];
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                insert_taikhoan($email, $user, $pass);
-                $thongbao = "Đã đăng ký thành công.Vui lòng đăng nhập để thực hiện chức năng bình luận hoặc đặt hàng ";
-            }
-            include "view/taikhoan/dangky.php";
-            break;
-        case "dangnhap":
-            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $checkuser = checkuser($user, $pass);
-                if (is_array($checkuser)) {
-                    $_SESSION['user'] = $checkuser;
-                    // $_SESSION['pass'] = $checkuser;
-                    header('Location: index.php?act=dangnhap');
-                    // $thongbao="bạn đã đăng nhập thành công ";
-                } else {
-                    $thongbao = "Tài khoản không tồn tại. Vui lòng đăng ký";
-                }
-            }
-            include "view/taikhoan/dangnhap.php";
-            break;
-        case "edit_taikhoan":
-            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $email = $_POST['email'];
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $address = $_POST['address'];
-                $tel = $_POST['tel'];
-                $id = $_POST['id'];
-                update_taikhoan($id, $user, $pass, $email, $address, $tel);
-                $_SESSION['user'] =checkuser($user, $pass);
+$vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
+// Sau khi thanh toán xong thì trả về index.php?act=bill
+$vnp_Returnurl = "http://localhost/fashion/fashion/tai_nguyen/index.php?act=bill";
+$vnp_TmnCode = "CGXZLS0Z";//Mã website tại VNPAY 
+$vnp_HashSecret = "XNBCJFAKAZQSGTARRLGCHVZWCIOIGSHN"; //Chuỗi bí mật
 
-                header('Location: index.php?act=edit_taikhoan');
-            }
-            include "view/taikhoan/edit_taikhoan.php";
-            break;
-        case "quenmk":
-            if (isset($_POST['guiemail']) && ($_POST['guiemail'])) {
-                $email = $_POST['email'];
-                $checkemail=checkemail($email);
-                if (is_array($checkemail)) {
-                    $thongbao = "Mật khẩu của bạn là:" . $checkemail['pass'];
-                } else {
-                    $thongbao = "Email này không tồn tại";
-                }
-            }
-            include "view/taikhoan/quenmk.php";
-            break;
-        case "thoat":
-            session_unset();
-            header('Location: index.php');
-            // include "view/gioithieu.php";
-            break;
-            case "addtocart":
-                if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
-                    $id = $_POST['id'];
-                    $soluong = isset($_POST['quantity_cart']) ? intval($_POST['quantity_cart']) : 1;
-            
-                    // Kiểm tra xem sản phẩm đã có trong giỏ hàng hay chưa
-                    $index = -1;
-                    foreach ($_SESSION['mycart'] as $key => $cartItem) {
-                        if ($cartItem[0] == $id) {
-                            $index = $key;
-                            break;
-                        }
-                    }
-            
-                    if ($index !== -1) {
-                        // Nếu sản phẩm đã có trong giỏ hàng, cập nhật số lượng
-                        $_SESSION['mycart'][$index][4] += $soluong;
-                        $_SESSION['mycart'][$index][5] = $_SESSION['mycart'][$index][3] * $_SESSION['mycart'][$index][4];
-                    } else {
-                        // Nếu sản phẩm chưa có trong giỏ hàng, thêm mới
-                        $name = $_POST['name'];
-                        $img = $_POST['img'];
-                        $price = $_POST['price'];
-                        $ttien = $price * $soluong;
-                        $spadd = [$id, $name, $img, $price, $soluong, $ttien];
-                        $_SESSION['mycart'][] = $spadd;
-                    }
-                }
-                header('Location: index.php?act=viewcart');
-                break;
-            case "delcart": 
-                if(isset($_GET['idcart'])){
-                    array_slice($_SESSION['mycart'],$_GET['idcart'],1);
-                }else{
-                    $_SESSION['mycart']=[];
-                }
-                // include "view/cart/viewcart.php";
-                header('Location: index.php?act=viewcart');
-                break;
-            case 'viewcart':
-            include "view/cart/viewcart.php";
-            break;
-            case "bill":
-                
-                include "view/cart/bill.php";
-                break;
+$vnp_TxnRef = rand(0,999999); //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
+$vnp_OrderInfo = 'Noi dung thanh toan';
+$vnp_OrderType = 'billpayment';
+$vnp_Amount = $tong_don * 100;
+$vnp_Locale = 'vn';
+$vnp_BankCode = 'NCB';
+$vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
+//Add Params of 2.0.1 Version
+// $vnp_ExpireDate = $_POST['txtexpire'];
+//Billing
+// $vnp_Bill_Mobile = $_POST['txt_billing_mobile'];
+// $vnp_Bill_Email = $_POST['txt_billing_email'];
+// $fullName = trim($_POST['txt_billing_fullname']);
+// if (isset($fullName) && trim($fullName) != '') {
+//     $name = explode(' ', $fullName);
+//     $vnp_Bill_FirstName = array_shift($name);
+//     $vnp_Bill_LastName = array_pop($name);
+// }
+// $vnp_Bill_Address=$_POST['txt_inv_addr1'];
+// $vnp_Bill_City=$_POST['txt_bill_city'];
+// $vnp_Bill_Country=$_POST['txt_bill_country'];
+// $vnp_Bill_State=$_POST['txt_bill_state'];
+// // Invoice
+// $vnp_Inv_Phone=$_POST['txt_inv_mobile'];
+// $vnp_Inv_Email=$_POST['txt_inv_email'];
+// $vnp_Inv_Customer=$_POST['txt_inv_customer'];
+// $vnp_Inv_Address=$_POST['txt_inv_addr1'];
+// $vnp_Inv_Company=$_POST['txt_inv_company'];
+// $vnp_Inv_Taxcode=$_POST['txt_inv_taxcode'];
+// $vnp_Inv_Type=$_POST['cbo_inv_type'];
+$inputData = array(
+    "vnp_Version" => "2.1.0",
+    "vnp_TmnCode" => $vnp_TmnCode,
+    "vnp_Amount" => $vnp_Amount,
+    "vnp_Command" => "pay",
+    "vnp_CreateDate" => date('YmdHis', strtotime('+100 days')),
+    "vnp_CurrCode" => "VND",
+    "vnp_IpAddr" => $vnp_IpAddr,
+    "vnp_Locale" => $vnp_Locale,
+    "vnp_OrderInfo" => $vnp_OrderInfo,
+    "vnp_OrderType" => $vnp_OrderType,
+    "vnp_ReturnUrl" => $vnp_Returnurl,
+    "vnp_TxnRef" => $vnp_TxnRef,
 
-                case "billcomfirm":
+    // "vnp_ExpireDate"=>$vnp_ExpireDate,
+    // "vnp_Bill_Mobile"=>$vnp_Bill_Mobile,
+    // "vnp_Bill_Email"=>$vnp_Bill_Email,
+    // "vnp_Bill_FirstName"=>$vnp_Bill_FirstName,
+    // "vnp_Bill_LastName"=>$vnp_Bill_LastName,
+    // "vnp_Bill_Address"=>$vnp_Bill_Address,
+    // "vnp_Bill_City"=>$vnp_Bill_City,
+    // "vnp_Bill_Country"=>$vnp_Bill_Country,
+    // "vnp_Inv_Phone"=>$vnp_Inv_Phone,
+    // "vnp_Inv_Email"=>$vnp_Inv_Email,
+    // "vnp_Inv_Customer"=>$vnp_Inv_Customer,
+    // "vnp_Inv_Address"=>$vnp_Inv_Address,
+    // "vnp_Inv_Company"=>$vnp_Inv_Company,
+    // "vnp_Inv_Taxcode"=>$vnp_Inv_Taxcode,
+    // "vnp_Inv_Type"=>$vnp_Inv_Type
+);
 
-                     if(isset($_POST['dongydathang'])&&($_POST['dongydathang'])){
-                        $name=$_POST['user'];
-                        $email=$_POST['email'];
-                        $address=$_POST['address'];
-                        $tel=$_POST['tel'];
-                        $ptt=$_POST['pttt'];
-                        $tongdonhang=tongdonhang();
-
-                        $idbill=insert_bill($name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang);
-
-                     }
-                    include "view/billcomfirm.php";
-                    break;   
-        case "gioithieu":
-            include "view/gioithieu.php";
-            break;
-        case "muahangthanhcong":
-            include "view/muahangthanhcong.php";
-            break;
-        case "lienhe":
-            include "view/lienhe.php";
-            break;
-            case "product-page":
-                include "view/product-page.php";
-                break;
-            case "about":
-                include "view/about.php";
-                break;
-            case "account":
-                include "view/account.php";
-                break;
-            case "blog":
-                include "view/blog.php";
-                break;
-            case "cart":
-                include "view/cart.php";
-                break;
-            case "checkout":
-                include "view/checkout.php";
-                break;
-            case "contact":
-                include "view/contact.php";
-                break;
-            case "login":
-                include "view/login.php";
-                break;
-            case "order-complete":
-                include "view/order-complete.php";
-                break;
-            case "order-overview":
-                include "view/order-overview.php";
-                break;
-            case "payment":
-                include "view/payment.php";
-                break;
-            case "register":
-                include "view/register.php";
-                break;
-            case "shop-list":
-                include "view/shop-list.php";
-                break;
-            case "shop":
-                include "view/shop.php";
-                break;
-            case "single-blog":
-                include "view/single-blog.php";
-                break;
-        default:
-            include "view/home.php";
-            break;
-    }
-} else {
-    include "view/home.php";
+if (isset($vnp_BankCode) && $vnp_BankCode != "") {
+    $inputData['vnp_BankCode'] = $vnp_BankCode;
 }
-include "view/footer.php";
+// if (isset($vnp_Bill_State) && $vnp_Bill_State != "") {
+//     $inputData['vnp_Bill_State'] = $vnp_Bill_State;
+// }
+
+//var_dump($inputData);
+ksort($inputData);
+$query = "";
+$i = 0;
+$hashdata = "";
+foreach ($inputData as $key => $value) {
+    if ($i == 1) {
+        $hashdata .= '&' . urlencode($key) . "=" . urlencode($value);
+    } else {
+        $hashdata .= urlencode($key) . "=" . urlencode($value);
+        $i = 1;
+    }
+    $query .= urlencode($key) . "=" . urlencode($value) . '&';
+}
+
+$vnp_Url = $vnp_Url . "?" . $query;
+if (isset($vnp_HashSecret)) {
+    $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);//  
+    $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
+}
+$returnData = array('code' => '00'
+    , 'message' => 'success'
+    , 'data' => $vnp_Url);
+    if (isset($_POST['redirect'])) {
+        header('Location: ' . $vnp_Url);
+        die();
+    } else {
+        echo json_encode($returnData);
+    }
+
+   
+?>
