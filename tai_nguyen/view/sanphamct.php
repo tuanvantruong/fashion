@@ -40,7 +40,7 @@
                      <div class="rating-summary-block">
                        <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
                      </div>
-                     <div class="price-box"> <span class="price"><?= $price ?></span> <del class="price old-price">$100.00</del> </div>
+                     <div class="price-box"> <span class="price"><?= $price ?></span> <del class="price old-price">100.00</del> </div>
                      <div class="product-info-stock-sku">
                        <div>
                          <label>Availability: </label>
