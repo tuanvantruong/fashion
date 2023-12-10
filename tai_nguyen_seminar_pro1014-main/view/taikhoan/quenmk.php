@@ -22,6 +22,7 @@
                   
                   <div class="col-xs-12">
                     <div class="input-box">
+                      
                        <h4 class="thongbao">
                             <?php
                              if(isset($thongbao)&&($thongbao!="")){

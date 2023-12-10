@@ -24,6 +24,7 @@
             <ul>
               <li class="active"> <a href="checkout.html">
                 <div class="step">
+                  
                   <div class="line"></div>
                   <div class="circle">1</div>
                 </div>

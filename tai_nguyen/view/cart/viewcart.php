@@ -6,7 +6,7 @@
        foreach ($_SESSION['mycart'] as $cart) {
         $hinh=$img_path.$cart[2];
         $ttien=$cart[3]*$cart[4];-->
-<section class="ptb-95">
+        <section class="ptb-95">
 <div class="container">
       <div class="row">
         <div class="col-xs-12 mb-xs-30">
@@ -74,7 +74,7 @@
                   <thead>
                     <tr>
                       <th colspan="2">Cart Total</th>
-                    </tr>
+</tr>
                   </thead>
                   <tbody>
                     
@@ -103,4 +103,4 @@
     
    
   </section>
-  <!-- CONTAINER END --> 
+  <!-- CONTAINER END -->

@@ -23,6 +23,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="blog-item">
+                  
                   <div class="blog-media"> <img src="images/blog_img1.jpg" alt="Honour"> <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> </div>
                   <div class="blog-detail"> <span class="post-date">01 jan 2017</span>
                     <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
