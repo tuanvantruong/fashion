@@ -164,6 +164,9 @@
                 viewcart(0);
                 ?>
            
+
+
+           
                  <div class="col-sm-12">
                         <div class="check-box"> <span>
                           <input type="checkbox" class="checkbox" id="chk-billing-address" name="chk-billing-address">

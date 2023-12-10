@@ -23,6 +23,7 @@
                       <label for="login-email">Email address</label>
                       <input id="login-email" name="email" type="email" required placeholder="Email Address">
                     </div>
+                    
                   </div>
                   <div class="col-xs-12">
                     <div class="input-box">

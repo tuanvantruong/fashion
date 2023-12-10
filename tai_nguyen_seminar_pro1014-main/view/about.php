@@ -17,6 +17,8 @@
   <!-- CONTAIN START ptb-95-->
   <section class="ptb-95">
     <div class="container">
+
+    
       <div class="row">
         <div class="col-xs-12">
           <div class="image-part"> <img alt="" src="images/about-honour.jpg"> </div>

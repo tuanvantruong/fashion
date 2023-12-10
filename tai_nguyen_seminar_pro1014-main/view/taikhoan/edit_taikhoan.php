@@ -24,6 +24,7 @@
                       <input id="login-email" name="user" type="text" required placeholder="User name" value="<?=$user?>">
                     </div>
                   </div>
+                  
                   <div class="col-xs-12">
                     <div class="input-box">
                       <label for="login-email">Email address</label>

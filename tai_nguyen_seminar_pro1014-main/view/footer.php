@@ -30,6 +30,7 @@
                   <li class="item"> <i class="fa fa-map-marker"> </i>
                     <p>Khu 2 , Hoàng Cương , Thanh Ba , Phú Thọ</p>
                     <hr>
+                    
                   </li>
                   <li class="item"> <i class="fa fa-envelope-o"> </i>
                     <p> <a>viethoangdeptrai@gmail.com </a> </p>
