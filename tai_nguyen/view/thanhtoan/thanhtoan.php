@@ -100,12 +100,14 @@ if (isset($_SESSION['user'])) {
                           <input type="text" required placeholder="Địa chỉ" name="dia_chi" value="<?= isset($user['address']) ? $user['address'] : '' ?>">
                         </div>
                       </div>
-                      <div class="col-sm-12">
-                        <div class="input-box">
-                        <label for="name">Số điện thoại</label>
-                          <input type="text" required placeholder="Số điện thoại" name="phone" value="<?= isset($user['tel']) ? $user['tel'] : '' ?>">
-                        </div>
-                      </div>
+                      <form id="myForm">
+        <div class="col-sm-12">
+            <div class="input-box">
+                <label for="name">Số điện thoại</label>
+                <input type="text" required placeholder="Số điện thoại" name="phone" pattern="^0\d{9,10}$" title="Vui lòng nhập số điện thoại hợp lệ (bắt đầu bằng 0 và có 10 hoặc 11 chữ số)">
+            </div>
+        </div>
+    </form>
                       <h5>Chọn phương thức thanh toán</h5> <br>
 
                         <div style="display:flex; align-items: center">
@@ -170,6 +172,22 @@ if (isset($_SESSION['user'])) {
             firstRadio.checked = true;
         }
     });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        var phoneInput = document.querySelector('input[name="phone"]');
+
+        phoneInput.addEventListener('input', function () {
+            var phoneNumber = phoneInput.value.trim();
+            var phoneRegex = /^0\d{9,10}$/;
+
+            if (!phoneRegex.test(phoneNumber)) {
+                phoneInput.setCustomValidity('Vui lòng nhập số điện thoại hợp lệ (bắt đầu bằng 0 và có 10 hoặc 11 chữ số)');
+            } else {
+                phoneInput.setCustomValidity('');
+            }
+        });
+    });
 </script>
+
   
  
