@@ -41,6 +41,12 @@ function loadall_sanpham_top10(){
     return $listsanpham;
 }
 
+function loadall_sanpham_top03(){
+    $sql="select * from sanpham where 1 order by luotxem desc limit 0,3";
+    $listsanpham=pdo_query($sql);
+    return $listsanpham;
+}
+
 function loadall_sanpham_top02(){
     $sql="select * from sanpham where 1 order by luotxem asc limit 0,1";
     $listsanpham=pdo_query($sql);
