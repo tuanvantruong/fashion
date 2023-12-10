@@ -134,7 +134,7 @@
                 <th scope="col">Ngày đặt</th>
                 <th scope="col">Số lượng đơn hàng</th>
                 <th scope="col">Số lượng bán</th>
-                <th scope="col">Tổng đơn hàng</th>
+                <th scope="col">Tổng tiền đơn hàng</th>
 
             </tr>
         </thead>
@@ -233,7 +233,7 @@
                 <th scope="col">Mã sản phẩm</th>
                 <th scope="col">Tên sản phẩm</th>
                 <th scope="col">Số lượng bán</th>
-                <th scope="col">Tổng đơn hàng</th>
+                <th scope="col">Tổng tiền đơn hàng</th>
 
             </tr>
         </thead>
