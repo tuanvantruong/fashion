@@ -249,7 +249,7 @@
                                   </div>
                                   <div class="price-box">
                                       <span class="price">' . $price . '</span>
-                                      <del class="price old-price">$100.00</del>
+                                      <del class="price old-price">100.00</del>
                                   </div>
                               </div>
                           </div>
