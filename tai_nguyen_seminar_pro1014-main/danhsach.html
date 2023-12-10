@@ -1,95 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website bán hàng</title>
-    <link rel="stylesheet" href="css1/css.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-     
-    </style>
-</head>
-<body>
-    <div class="boxcenter">
-       <!-- BIGIN HEADER -->
-       <header>
-        <div class="row mb header_admin">
-            <h1>Admin</h1>
-        </div>
-        <div class="row mb menu">
-            <ul>
-                
-              <li><a href="index.html">Trang chủ</a></li>
-              <li><a href="admin.html">Danh mục</a></li>
-              <li><a href="">Hàng hóa</a></li>
-              <li><a href="">Khách hàng</a></li>
-              <li><a href="">Bình luận</a></li>
-              <li><a href="">Thống kê</a></li>
-            </ul>
-        </div>
-        <div class="row2">
-         <div class="row2 font_title">
-          <h1>DANH SÁCH LOẠI HÀNG HÓA</h1>
-         </div>
-         <div class="row2 form_content ">
-          <form action="#" method="POST">
-           <div class="row2 mb10 formds_loai">
-           <table>
-            <tr>
-                <th></th>
-                <th>MÃ LOẠI</th>
-                <th>TÊN LOẠI</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>001</td>
-                <td>Đồng hồ</td>
-                <td><input type="button" value="Sửa">   <input type="button" value="Xóa"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>001</td>
-                <td>Đồng hồ</td>
-                <td><input type="button" value="Sửa">   <input type="button" value="Xóa"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>001</td>
-                <td>Đồng hồ</td>
-                <td><input type="button" value="Sửa">   <input type="button" value="Xóa"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>001</td>
-                <td>Đồng hồ</td>
-                <td><input type="button" value="Sửa">   <input type="button" value="Xóa"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>001</td>
-                <td>Đồng hồ</td>
-                <td><input type="button" value="Sửa">   <input type="button" value="Xóa"></td>
-            </tr>
-           
-            
-           </table>
-           </div>
-           <div class="row mb10 ">
-         <input class="mr20" type="button" value="CHỌN TẤT CẢ">
-         <input  class="mr20" type="button" value="BỎ CHỌN TẤT CẢ">
-<a href="admin.html"> <input  class="mr20" type="button" value="NHẬP THÊM"></a>
-           </div>
-          </form>
-         </div>
-        </div>
-       </header>
-     <!-- END HEADER -->
+<?php
+$vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
+// Sau khi thanh toán xong thì trả về index.php?act=bill
+$vnp_Returnurl = "http://localhost/fashion/fashion/tai_nguyen/index.php?act=bill";
+$vnp_TmnCode = "CGXZLS0Z";//Mã website tại VNPAY 
+$vnp_HashSecret = "XNBCJFAKAZQSGTARRLGCHVZWCIOIGSHN"; //Chuỗi bí mật
 
-       
-    </div>
-    
-</body>
-</html>
+$vnp_TxnRef = rand(0,999999); //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
+$vnp_OrderInfo = 'Noi dung thanh toan';
+$vnp_OrderType = 'billpayment';
+$vnp_Amount = $tong_don * 100;
+$vnp_Locale = 'vn';
+$vnp_BankCode = 'NCB';
+$vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
+//Add Params of 2.0.1 Version
+// $vnp_ExpireDate = $_POST['txtexpire'];
+//Billing
+// $vnp_Bill_Mobile = $_POST['txt_billing_mobile'];
+// $vnp_Bill_Email = $_POST['txt_billing_email'];
+// $fullName = trim($_POST['txt_billing_fullname']);
+// if (isset($fullName) && trim($fullName) != '') {
+//     $name = explode(' ', $fullName);
+//     $vnp_Bill_FirstName = array_shift($name);
+//     $vnp_Bill_LastName = array_pop($name);
+// }
+// $vnp_Bill_Address=$_POST['txt_inv_addr1'];
+// $vnp_Bill_City=$_POST['txt_bill_city'];
+// $vnp_Bill_Country=$_POST['txt_bill_country'];
+// $vnp_Bill_State=$_POST['txt_bill_state'];
+// // Invoice
+// $vnp_Inv_Phone=$_POST['txt_inv_mobile'];
+// $vnp_Inv_Email=$_POST['txt_inv_email'];
+// $vnp_Inv_Customer=$_POST['txt_inv_customer'];
+// $vnp_Inv_Address=$_POST['txt_inv_addr1'];
+// $vnp_Inv_Company=$_POST['txt_inv_company'];
+// $vnp_Inv_Taxcode=$_POST['txt_inv_taxcode'];
+// $vnp_Inv_Type=$_POST['cbo_inv_type'];
+$inputData = array(
+    "vnp_Version" => "2.1.0",
+    "vnp_TmnCode" => $vnp_TmnCode,
+    "vnp_Amount" => $vnp_Amount,
+    "vnp_Command" => "pay",
+    "vnp_CreateDate" => date('YmdHis', strtotime('+100 days')),
+    "vnp_CurrCode" => "VND",
+    "vnp_IpAddr" => $vnp_IpAddr,
+    "vnp_Locale" => $vnp_Locale,
+    "vnp_OrderInfo" => $vnp_OrderInfo,
+    "vnp_OrderType" => $vnp_OrderType,
+    "vnp_ReturnUrl" => $vnp_Returnurl,
+    "vnp_TxnRef" => $vnp_TxnRef,
+
+    // "vnp_ExpireDate"=>$vnp_ExpireDate,
+    // "vnp_Bill_Mobile"=>$vnp_Bill_Mobile,
+    // "vnp_Bill_Email"=>$vnp_Bill_Email,
+    // "vnp_Bill_FirstName"=>$vnp_Bill_FirstName,
+    // "vnp_Bill_LastName"=>$vnp_Bill_LastName,
+    // "vnp_Bill_Address"=>$vnp_Bill_Address,
+    // "vnp_Bill_City"=>$vnp_Bill_City,
+    // "vnp_Bill_Country"=>$vnp_Bill_Country,
+    // "vnp_Inv_Phone"=>$vnp_Inv_Phone,
+    // "vnp_Inv_Email"=>$vnp_Inv_Email,
+    // "vnp_Inv_Customer"=>$vnp_Inv_Customer,
+    // "vnp_Inv_Address"=>$vnp_Inv_Address,
+    // "vnp_Inv_Company"=>$vnp_Inv_Company,
+    // "vnp_Inv_Taxcode"=>$vnp_Inv_Taxcode,
+    // "vnp_Inv_Type"=>$vnp_Inv_Type
+);
+
+if (isset($vnp_BankCode) && $vnp_BankCode != "") {
+    $inputData['vnp_BankCode'] = $vnp_BankCode;
+}
+// if (isset($vnp_Bill_State) && $vnp_Bill_State != "") {
+//     $inputData['vnp_Bill_State'] = $vnp_Bill_State;
+// }
+
+//var_dump($inputData);
+ksort($inputData);
+$query = "";
+$i = 0;
+$hashdata = "";
+foreach ($inputData as $key => $value) {
+    if ($i == 1) {
+        $hashdata .= '&' . urlencode($key) . "=" . urlencode($value);
+    } else {
+        $hashdata .= urlencode($key) . "=" . urlencode($value);
+        $i = 1;
+    }
+    $query .= urlencode($key) . "=" . urlencode($value) . '&';
+}
+
+$vnp_Url = $vnp_Url . "?" . $query;
+if (isset($vnp_HashSecret)) {
+    $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);//  
+    $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
+}
+$returnData = array('code' => '00'
+    , 'message' => 'success'
+    , 'data' => $vnp_Url);
+    if (isset($_POST['redirect'])) {
+        header('Location: ' . $vnp_Url);
+        die();
+    } else {
+        echo json_encode($returnData);
+    }
+
+   
+?>
